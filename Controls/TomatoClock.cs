@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Management.DataBase;
+
 using System.Data.SqlClient;
 using Management.DataBaseHelper;
 namespace Management.Forms

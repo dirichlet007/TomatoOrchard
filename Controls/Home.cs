@@ -56,5 +56,7 @@ namespace Management.Forms
             dataGridView1.DataSource = ds;
             dataGridView1.DataBind();*/
         }
+
+        
     }
 }
