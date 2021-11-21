@@ -100,7 +100,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ManagementDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="ProjectHelper\DataBase.cs" />
     <Compile Include="Forms\AddBacklog.cs">
       <SubType>Form</SubType>
     </Compile>
