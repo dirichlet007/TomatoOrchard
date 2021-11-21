@@ -73,8 +73,8 @@ namespace Management.Forms
                 string tdlen = rtbtime.Text.Trim().Substring(0,2);
                 string tdtime= DateTime.Now.ToString();
                 DBUtil db= new DBUtil();
-                string sql = string.Format(@"INSERT INTO tomato
-                    VALUES ('t0001','{0}','{1}','{2}','{3}','{4}','0');", tdname, tdtype,tdlen,tdtime,account);
+                string sql = string.Format(@"set tnum_insert tomato on INSERT INTO tomato
+                    VALUES (null,'{0}','{1}','{2}','{3}','{4}','0' set tnum_insert tomato off);", tdname, tdtype,tdlen,tdtime,account);
                 db.SqlQuery(sql);
                 rfhTmtClk();
                 this.Close();
