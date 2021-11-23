@@ -32,7 +32,7 @@ namespace Management {
         
         private global::System.Data.DataRelation relationFK__bills__account__20C1E124;
         
-        private global::System.Data.DataRelation relationFK__tomato__account__1B0907CE;
+        private global::System.Data.DataRelation relationFK__tomato__account__36B12243;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -247,7 +247,7 @@ namespace Management {
                 }
             }
             this.relationFK__bills__account__20C1E124 = this.Relations["FK__bills__account__20C1E124"];
-            this.relationFK__tomato__account__1B0907CE = this.Relations["FK__tomato__account__1B0907CE"];
+            this.relationFK__tomato__account__36B12243 = this.Relations["FK__tomato__account__36B12243"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -268,10 +268,10 @@ namespace Management {
                         this.tableuserinfo.accountColumn}, new global::System.Data.DataColumn[] {
                         this.tablebills.accountColumn}, false);
             this.Relations.Add(this.relationFK__bills__account__20C1E124);
-            this.relationFK__tomato__account__1B0907CE = new global::System.Data.DataRelation("FK__tomato__account__1B0907CE", new global::System.Data.DataColumn[] {
+            this.relationFK__tomato__account__36B12243 = new global::System.Data.DataRelation("FK__tomato__account__36B12243", new global::System.Data.DataColumn[] {
                         this.tableuserinfo.accountColumn}, new global::System.Data.DataColumn[] {
                         this.tabletomato.accountColumn}, false);
-            this.Relations.Add(this.relationFK__tomato__account__1B0907CE);
+            this.Relations.Add(this.relationFK__tomato__account__36B12243);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -803,22 +803,29 @@ namespace Management {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public tomatoRow AddtomatoRow(string tdnum, string tdname, string tdtype, int tdlenth, System.DateTime tdtime, userinfoRow parentuserinfoRowByFK__tomato__account__1B0907CE, int tdcounter) {
+            public tomatoRow AddtomatoRow(string tdname, string tdtype, int tdlenth, System.DateTime tdtime, userinfoRow parentuserinfoRowByFK__tomato__account__36B12243, int tdcounter) {
                 tomatoRow rowtomatoRow = ((tomatoRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        tdnum,
+                        null,
                         tdname,
                         tdtype,
                         tdlenth,
                         tdtime,
                         null,
                         tdcounter};
-                if ((parentuserinfoRowByFK__tomato__account__1B0907CE != null)) {
-                    columnValuesArray[5] = parentuserinfoRowByFK__tomato__account__1B0907CE[0];
+                if ((parentuserinfoRowByFK__tomato__account__36B12243 != null)) {
+                    columnValuesArray[5] = parentuserinfoRowByFK__tomato__account__36B12243[0];
                 }
                 rowtomatoRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtomatoRow);
                 return rowtomatoRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public tomatoRow FindBytdnum(int tdnum) {
+                return ((tomatoRow)(this.Rows.Find(new object[] {
+                            tdnum})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -850,7 +857,7 @@ namespace Management {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columntdnum = new global::System.Data.DataColumn("tdnum", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columntdnum = new global::System.Data.DataColumn("tdnum", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntdnum);
                 this.columntdname = new global::System.Data.DataColumn("tdname", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntdname);
@@ -864,8 +871,14 @@ namespace Management {
                 base.Columns.Add(this.columnaccount);
                 this.columntdcounter = new global::System.Data.DataColumn("tdcounter", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columntdcounter);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columntdnum}, true));
+                this.columntdnum.AutoIncrement = true;
+                this.columntdnum.AutoIncrementSeed = -1;
+                this.columntdnum.AutoIncrementStep = -1;
                 this.columntdnum.AllowDBNull = false;
-                this.columntdnum.MaxLength = 7;
+                this.columntdnum.ReadOnly = true;
+                this.columntdnum.Unique = true;
                 this.columntdname.AllowDBNull = false;
                 this.columntdname.MaxLength = 20;
                 this.columntdtype.AllowDBNull = false;
@@ -1407,9 +1420,9 @@ namespace Management {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string tdnum {
+            public int tdnum {
                 get {
-                    return ((string)(this[this.tabletomato.tdnumColumn]));
+                    return ((int)(this[this.tabletomato.tdnumColumn]));
                 }
                 set {
                     this[this.tabletomato.tdnumColumn] = value;
@@ -1491,10 +1504,10 @@ namespace Management {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public userinfoRow userinfoRow {
                 get {
-                    return ((userinfoRow)(this.GetParentRow(this.Table.ParentRelations["FK__tomato__account__1B0907CE"])));
+                    return ((userinfoRow)(this.GetParentRow(this.Table.ParentRelations["FK__tomato__account__36B12243"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__tomato__account__1B0907CE"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__tomato__account__36B12243"]);
                 }
             }
             
@@ -1611,11 +1624,11 @@ namespace Management {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public tomatoRow[] GettomatoRows() {
-                if ((this.Table.ChildRelations["FK__tomato__account__1B0907CE"] == null)) {
+                if ((this.Table.ChildRelations["FK__tomato__account__36B12243"] == null)) {
                     return new tomatoRow[0];
                 }
                 else {
-                    return ((tomatoRow[])(base.GetChildRows(this.Table.ChildRelations["FK__tomato__account__1B0907CE"])));
+                    return ((tomatoRow[])(base.GetChildRows(this.Table.ChildRelations["FK__tomato__account__36B12243"])));
                 }
             }
         }
@@ -2108,19 +2121,49 @@ namespace Management.ManagementDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("account", "account");
             tableMapping.ColumnMappings.Add("tdcounter", "tdcounter");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[tomato] WHERE (([tdnum] = @Original_tdnum) AND ([tdname] = @Original_tdname) AND ([tdtype] = @Original_tdtype) AND ([tdlenth] = @Original_tdlenth) AND ([tdtime] = @Original_tdtime) AND ([account] = @Original_account) AND ((@IsNull_tdcounter = 1 AND [tdcounter] IS NULL) OR ([tdcounter] = @Original_tdcounter)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tdnum", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdnum", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tdname", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdname", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tdtype", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdtype", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tdlenth", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdlenth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tdtime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdtime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_account", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "account", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_tdcounter", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdcounter", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tdcounter", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdcounter", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[tomato] ([tdnum], [tdname], [tdtype], [tdlenth], [tdtime], [ac" +
-                "count], [tdcounter]) VALUES (@tdnum, @tdname, @tdtype, @tdlenth, @tdtime, @accou" +
-                "nt, @tdcounter)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[tomato] ([tdname], [tdtype], [tdlenth], [tdtime], [account], [tdcounter]) VALUES (@tdname, @tdtype, @tdlenth, @tdtime, @account, @tdcounter);
+SELECT tdnum, tdname, tdtype, tdlenth, tdtime, account, tdcounter FROM tomato WHERE (tdnum = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tdnum", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdnum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tdname", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdname", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tdtype", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdtype", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tdlenth", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdlenth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tdtime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdtime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@account", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "account", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tdcounter", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdcounter", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tomato] SET [tdname] = @tdname, [tdtype] = @tdtype, [tdlenth] = @tdlenth, [tdtime] = @tdtime, [account] = @account, [tdcounter] = @tdcounter WHERE (([tdnum] = @Original_tdnum) AND ([tdname] = @Original_tdname) AND ([tdtype] = @Original_tdtype) AND ([tdlenth] = @Original_tdlenth) AND ([tdtime] = @Original_tdtime) AND ([account] = @Original_account) AND ((@IsNull_tdcounter = 1 AND [tdcounter] IS NULL) OR ([tdcounter] = @Original_tdcounter)));
+SELECT tdnum, tdname, tdtype, tdlenth, tdtime, account, tdcounter FROM tomato WHERE (tdnum = @tdnum)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tdname", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdname", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tdtype", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdtype", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tdlenth", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdlenth", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tdtime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdtime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@account", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "account", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tdcounter", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdcounter", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tdnum", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdnum", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tdname", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdname", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tdtype", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdtype", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tdlenth", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdlenth", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tdtime", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdtime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_account", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "account", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_tdcounter", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdcounter", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_tdcounter", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "tdcounter", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tdnum", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "tdnum", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2133,17 +2176,12 @@ namespace Management.ManagementDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT tdnum, tdname, tdtype, tdlenth, tdtime, account, tdcounter FROM dbo.tomato" +
                 "";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT tdnum, tdname, tdtype, tdlenth, tdtime, account, tdcounter FROM dbo.tomato" +
-                "";
-            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2168,19 +2206,6 @@ namespace Management.ManagementDataSetTableAdapters {
             ManagementDataSet.tomatoDataTable dataTable = new ManagementDataSet.tomatoDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy(ManagementDataSet.tomatoDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2215,39 +2240,83 @@ namespace Management.ManagementDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string tdnum, string tdname, string tdtype, int tdlenth, System.DateTime tdtime, string account, global::System.Nullable<int> tdcounter) {
-            if ((tdnum == null)) {
-                throw new global::System.ArgumentNullException("tdnum");
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_tdnum, string Original_tdname, string Original_tdtype, int Original_tdlenth, System.DateTime Original_tdtime, string Original_account, global::System.Nullable<int> Original_tdcounter) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_tdnum));
+            if ((Original_tdname == null)) {
+                throw new global::System.ArgumentNullException("Original_tdname");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(tdnum));
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_tdname));
             }
+            if ((Original_tdtype == null)) {
+                throw new global::System.ArgumentNullException("Original_tdtype");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_tdtype));
+            }
+            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_tdlenth));
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((System.DateTime)(Original_tdtime));
+            if ((Original_account == null)) {
+                throw new global::System.ArgumentNullException("Original_account");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_account));
+            }
+            if ((Original_tdcounter.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((int)(Original_tdcounter.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string tdname, string tdtype, int tdlenth, System.DateTime tdtime, string account, global::System.Nullable<int> tdcounter) {
             if ((tdname == null)) {
                 throw new global::System.ArgumentNullException("tdname");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(tdname));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(tdname));
             }
             if ((tdtype == null)) {
                 throw new global::System.ArgumentNullException("tdtype");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(tdtype));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(tdtype));
             }
-            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(tdlenth));
-            this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(tdtime));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((int)(tdlenth));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((System.DateTime)(tdtime));
             if ((account == null)) {
                 throw new global::System.ArgumentNullException("account");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(account));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(account));
             }
             if ((tdcounter.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((int)(tdcounter.Value));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((int)(tdcounter.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2263,6 +2332,91 @@ namespace Management.ManagementDataSetTableAdapters {
                     this.Adapter.InsertCommand.Connection.Close();
                 }
             }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string tdname, string tdtype, int tdlenth, System.DateTime tdtime, string account, global::System.Nullable<int> tdcounter, int Original_tdnum, string Original_tdname, string Original_tdtype, int Original_tdlenth, System.DateTime Original_tdtime, string Original_account, global::System.Nullable<int> Original_tdcounter, int tdnum) {
+            if ((tdname == null)) {
+                throw new global::System.ArgumentNullException("tdname");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(tdname));
+            }
+            if ((tdtype == null)) {
+                throw new global::System.ArgumentNullException("tdtype");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(tdtype));
+            }
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(tdlenth));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((System.DateTime)(tdtime));
+            if ((account == null)) {
+                throw new global::System.ArgumentNullException("account");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(account));
+            }
+            if ((tdcounter.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(tdcounter.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_tdnum));
+            if ((Original_tdname == null)) {
+                throw new global::System.ArgumentNullException("Original_tdname");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_tdname));
+            }
+            if ((Original_tdtype == null)) {
+                throw new global::System.ArgumentNullException("Original_tdtype");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_tdtype));
+            }
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_tdlenth));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((System.DateTime)(Original_tdtime));
+            if ((Original_account == null)) {
+                throw new global::System.ArgumentNullException("Original_account");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_account));
+            }
+            if ((Original_tdcounter.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_tdcounter.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(tdnum));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string tdname, string tdtype, int tdlenth, System.DateTime tdtime, string account, global::System.Nullable<int> tdcounter, int Original_tdnum, string Original_tdname, string Original_tdtype, int Original_tdlenth, System.DateTime Original_tdtime, string Original_account, global::System.Nullable<int> Original_tdcounter) {
+            return this.Update(tdname, tdtype, tdlenth, tdtime, account, tdcounter, Original_tdnum, Original_tdname, Original_tdtype, Original_tdlenth, Original_tdtime, Original_account, Original_tdcounter, Original_tdnum);
         }
     }
     

@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.IO;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
+﻿using Management.DataBaseHelper;
+using System;
 using System.Media;
-using Management.DataBaseHelper;
+using System.Windows.Forms;
 namespace Management.Forms
 {
     public partial class TimeCounter : Form
@@ -31,7 +22,7 @@ namespace Management.Forms
         private void TimeCounter_Load(object sender, EventArgs e)
         {
             timer1.Start();
-            
+
             player.Play();
         }
         //public int Attentiontime = 25*60;
@@ -70,15 +61,15 @@ namespace Management.Forms
             this.Left = leftWidth;//重设窗体初此左边值 
             this.Top = topWidth; //重设窗体初此上边值 
         }
-    
-        
+
+
         string music = Application.StartupPath.Substring(0, Application.StartupPath.Length - 9) + "\\music\\alarm.wav";
         SoundPlayer playeralarm = new SoundPlayer(@"C:\Users\唐宇峰\Desktop\Management\music\alarm.wav");
         private void ToClock()
         {
             Attentiontime -= 1;
             int left = Attentiontime / 60;
-            int right = Attentiontime% 60;
+            int right = Attentiontime % 60;
             string minute;
             string second;
             if (left < 10)
@@ -97,14 +88,14 @@ namespace Management.Forms
             {
                 second = "" + right;
             }
-            
+
             TimeSet.Text = minute + ":" + second;
             if (Attentiontime == 0)
             {
                 TimeSet.Text = "00:00";
                 label1.Text = "已完成";
 
-                string sql = string.Format(@"UPDATE tomato SET tdcounter=tdcounter+1 WHERE tdname='{0}' and account={1}", tdname,Taccount);
+                string sql = string.Format(@"UPDATE tomato SET tdcounter=tdcounter+1 WHERE tdname='{0}' and account={1}", tdname, Taccount);
                 DBUtil db = new DBUtil();
                 db.SqlQuery(sql);
                 Shake();
@@ -112,7 +103,7 @@ namespace Management.Forms
                 playeralarm.Play();
                 timer1.Stop();
             }
-            
+
         }
 
         private void label1_Click(object sender, EventArgs e)

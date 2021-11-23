@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Management.ProjectHelper
 {
@@ -21,7 +16,7 @@ namespace Management.ProjectHelper
                 }
             }
         }
-        public void openFrm(Form frm,Panel panelmain)    //在panel中打开窗体
+        public void openFrm(Form frm, Panel panelmain)    //在panel中打开窗体
         {
             frm.TopLevel = false;
             frm.WindowState = FormWindowState.Maximized;
@@ -31,7 +26,7 @@ namespace Management.ProjectHelper
             frm.Show();
         }
 
-        public void AddControlsToPanel(Control c,Panel panelmain)
+        public void AddControlsToPanel(Control c, Panel panelmain)
         {
 
             c.Dock = DockStyle.Fill;

@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Management.ProjectHelper;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Management.ProjectHelper;
+using  Management.Controls;
 namespace Management.Forms
 {
-  
+
     public partial class DashBoard : Form
     {
         public string username;
@@ -28,12 +29,12 @@ namespace Management.Forms
 
             timer5.Start();
             Color c = Color.FromArgb(num1, num2, num3);
-            labeltitle.Text = "欢迎！"+username;
+            labeltitle.Text = "欢迎！" + username;
             if (authority == "1")
             { label4.Text = "权限:  超级管理员"; }
             else if (authority == "2")
             { label4.Text = "权限:  普通管理员"; }
-            else
+            else if(authority == "3")
             {
                 label4.Text = "权限:  用户";
             }
@@ -103,7 +104,7 @@ namespace Management.Forms
         {
             Home fs = new Home();
             fmhpr.closeFrm(panelmain);
-            fmhpr.AddControlsToPanel(fs,panelmain);
+            fmhpr.AddControlsToPanel(fs, panelmain);
         }
         public void ChangeColor(Color c)
         {
@@ -123,26 +124,26 @@ namespace Management.Forms
             this.label1.ForeColor = c;
             this.label4.BackColor = c;
         }
-        
-        
+
+
         private void btnbookmanage_Click(object sender, EventArgs e)
-        {           
-                TomatoClock ttc = new TomatoClock();
-                ttc.Caccount = account;
-                fmhpr.closeFrm(panelmain);
-                fmhpr.AddControlsToPanel(ttc, panelmain);
-            
+        {
+            TomatoClock ttc = new TomatoClock();
+            ttc.Caccount = account;
+            fmhpr.closeFrm(panelmain);
+            fmhpr.AddControlsToPanel(ttc, panelmain);
+
         }
         private void btnsystemset_Click(object sender, EventArgs e)
         {
             SystemSettings fs = new SystemSettings();
             fs.change += new SystemSettings.ChangeMainForm(ChangeColor);
-           
+
             fmhpr.closeFrm(panelmain);
-            fmhpr.openFrm(fs,panelmain);
+            fmhpr.openFrm(fs, panelmain);
 
         }
-        
+
 
         private void panelmain_Paint(object sender, PaintEventArgs e)
         {

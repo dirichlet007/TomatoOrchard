@@ -1,5 +1,4 @@
-﻿
-namespace Management.Forms
+﻿namespace Management.Controls
 {
     partial class Home
     {
@@ -31,19 +30,10 @@ namespace Management.Forms
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tdnumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tdnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tdtypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tdlenthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tdtimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tdcounterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tomatoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.managementDataSet = new Management.ManagementDataSet();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tomatoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tomatoTableAdapter = new Management.ManagementDataSetTableAdapters.tomatoTableAdapter();
+            this.tableAdapterManager = new Management.ManagementDataSetTableAdapters.TableAdapterManager();
             this.tomatoBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -57,144 +47,42 @@ namespace Management.Forms
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tomatoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.tomatoTableAdapter = new Management.ManagementDataSetTableAdapters.tomatoTableAdapter();
-            this.tableAdapterManager = new Management.ManagementDataSetTableAdapters.TableAdapterManager();
-            this.button1 = new System.Windows.Forms.Button();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tomatoBindingSource)).BeginInit();
+            this.tomatoDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.managementDataSet)).BeginInit();
-            this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tomatoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tomatoBindingNavigator)).BeginInit();
             this.tomatoBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tomatoDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.ForeColor = System.Drawing.Color.Coral;
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Size = new System.Drawing.Size(992, 548);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "统计";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Font = new System.Drawing.Font("宋体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Size = new System.Drawing.Size(992, 548);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "主页";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tdnumDataGridViewTextBoxColumn,
-            this.tdnameDataGridViewTextBoxColumn,
-            this.tdtypeDataGridViewTextBoxColumn,
-            this.tdlenthDataGridViewTextBoxColumn,
-            this.tdtimeDataGridViewTextBoxColumn,
-            this.accountDataGridViewTextBoxColumn,
-            this.tdcounterDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tomatoBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 2);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(988, 544);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // tdnumDataGridViewTextBoxColumn
-            // 
-            this.tdnumDataGridViewTextBoxColumn.DataPropertyName = "tdnum";
-            this.tdnumDataGridViewTextBoxColumn.HeaderText = "代办编号";
-            this.tdnumDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tdnumDataGridViewTextBoxColumn.Name = "tdnumDataGridViewTextBoxColumn";
-            this.tdnumDataGridViewTextBoxColumn.Width = 160;
-            // 
-            // tdnameDataGridViewTextBoxColumn
-            // 
-            this.tdnameDataGridViewTextBoxColumn.DataPropertyName = "tdname";
-            this.tdnameDataGridViewTextBoxColumn.HeaderText = "代办名称";
-            this.tdnameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tdnameDataGridViewTextBoxColumn.Name = "tdnameDataGridViewTextBoxColumn";
-            this.tdnameDataGridViewTextBoxColumn.Width = 160;
-            // 
-            // tdtypeDataGridViewTextBoxColumn
-            // 
-            this.tdtypeDataGridViewTextBoxColumn.DataPropertyName = "tdtype";
-            this.tdtypeDataGridViewTextBoxColumn.HeaderText = "代办类型";
-            this.tdtypeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tdtypeDataGridViewTextBoxColumn.Name = "tdtypeDataGridViewTextBoxColumn";
-            this.tdtypeDataGridViewTextBoxColumn.Width = 160;
-            // 
-            // tdlenthDataGridViewTextBoxColumn
-            // 
-            this.tdlenthDataGridViewTextBoxColumn.DataPropertyName = "tdlenth";
-            this.tdlenthDataGridViewTextBoxColumn.HeaderText = "代办时长";
-            this.tdlenthDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tdlenthDataGridViewTextBoxColumn.Name = "tdlenthDataGridViewTextBoxColumn";
-            this.tdlenthDataGridViewTextBoxColumn.Width = 160;
-            // 
-            // tdtimeDataGridViewTextBoxColumn
-            // 
-            this.tdtimeDataGridViewTextBoxColumn.DataPropertyName = "tdtime";
-            this.tdtimeDataGridViewTextBoxColumn.HeaderText = "     代办创建时间";
-            this.tdtimeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tdtimeDataGridViewTextBoxColumn.Name = "tdtimeDataGridViewTextBoxColumn";
-            this.tdtimeDataGridViewTextBoxColumn.Width = 320;
-            // 
-            // accountDataGridViewTextBoxColumn
-            // 
-            this.accountDataGridViewTextBoxColumn.DataPropertyName = "account";
-            this.accountDataGridViewTextBoxColumn.HeaderText = "代办账号";
-            this.accountDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.accountDataGridViewTextBoxColumn.Name = "accountDataGridViewTextBoxColumn";
-            this.accountDataGridViewTextBoxColumn.Width = 160;
-            // 
-            // tdcounterDataGridViewTextBoxColumn
-            // 
-            this.tdcounterDataGridViewTextBoxColumn.DataPropertyName = "tdcounter";
-            this.tdcounterDataGridViewTextBoxColumn.HeaderText = "完成次数";
-            this.tdcounterDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tdcounterDataGridViewTextBoxColumn.Name = "tdcounterDataGridViewTextBoxColumn";
-            this.tdcounterDataGridViewTextBoxColumn.Width = 160;
-            // 
-            // tomatoBindingSource
-            // 
-            this.tomatoBindingSource.DataMember = "tomato";
-            this.tomatoBindingSource.DataSource = this.managementDataSet;
             // 
             // managementDataSet
             // 
             this.managementDataSet.DataSetName = "ManagementDataSet";
             this.managementDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tabControl1
+            // tomatoBindingSource
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1000, 574);
-            this.tabControl1.TabIndex = 0;
+            this.tomatoBindingSource.DataMember = "tomato";
+            this.tomatoBindingSource.DataSource = this.managementDataSet;
+            // 
+            // tomatoTableAdapter
+            // 
+            this.tomatoTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.billsTableAdapter = null;
+            this.tableAdapterManager.tomatoTableAdapter = this.tomatoTableAdapter;
+            this.tableAdapterManager.UpdateOrder = Management.ManagementDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.userinfoTableAdapter = null;
             // 
             // tomatoBindingNavigator
             // 
@@ -223,8 +111,8 @@ namespace Management.Forms
             this.tomatoBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.tomatoBindingNavigator.Name = "tomatoBindingNavigator";
             this.tomatoBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.tomatoBindingNavigator.Size = new System.Drawing.Size(1002, 27);
-            this.tomatoBindingNavigator.TabIndex = 1;
+            this.tomatoBindingNavigator.Size = new System.Drawing.Size(1336, 27);
+            this.tomatoBindingNavigator.TabIndex = 0;
             this.tomatoBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorAddNewItem
@@ -281,7 +169,7 @@ namespace Management.Forms
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "当前位置";
             // 
@@ -322,45 +210,99 @@ namespace Management.Forms
             this.tomatoBindingNavigatorSaveItem.Text = "保存数据";
             this.tomatoBindingNavigatorSaveItem.Click += new System.EventHandler(this.tomatoBindingNavigatorSaveItem_Click);
             // 
-            // tomatoTableAdapter
+            // tomatoDataGridView
             // 
-            this.tomatoTableAdapter.ClearBeforeFill = true;
+            this.tomatoDataGridView.AutoGenerateColumns = false;
+            this.tomatoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tomatoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
+            this.tomatoDataGridView.DataSource = this.tomatoBindingSource;
+            this.tomatoDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tomatoDataGridView.Location = new System.Drawing.Point(0, 27);
+            this.tomatoDataGridView.Name = "tomatoDataGridView";
+            this.tomatoDataGridView.RowHeadersWidth = 51;
+            this.tomatoDataGridView.RowTemplate.Height = 27;
+            this.tomatoDataGridView.Size = new System.Drawing.Size(1336, 694);
+            this.tomatoDataGridView.TabIndex = 1;
             // 
-            // tableAdapterManager
+            // dataGridViewTextBoxColumn1
             // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.billsTableAdapter = null;
-            this.tableAdapterManager.tomatoTableAdapter = this.tomatoTableAdapter;
-            this.tableAdapterManager.UpdateOrder = Management.ManagementDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.userinfoTableAdapter = null;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "tdnum";
+            this.dataGridViewTextBoxColumn1.HeaderText = "代办编号";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 250;
             // 
-            // button1
+            // dataGridViewTextBoxColumn2
             // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "tdname";
+            this.dataGridViewTextBoxColumn2.HeaderText = "代办名称";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 160;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "tdtype";
+            this.dataGridViewTextBoxColumn3.HeaderText = "代办类型";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 160;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "tdlenth";
+            this.dataGridViewTextBoxColumn4.HeaderText = "代办时长";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 160;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "tdtime";
+            this.dataGridViewTextBoxColumn5.HeaderText = "代办时间";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 160;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "account";
+            this.dataGridViewTextBoxColumn6.HeaderText = "账户";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 160;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "tdcounter";
+            this.dataGridViewTextBoxColumn7.HeaderText = "完成次数";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 300;
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Controls.Add(this.tomatoDataGridView);
             this.Controls.Add(this.tomatoBindingNavigator);
-            this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Home";
-            this.Size = new System.Drawing.Size(1002, 577);
-            this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tomatoBindingSource)).EndInit();
+            this.Size = new System.Drawing.Size(1336, 721);
             ((System.ComponentModel.ISupportInitialize)(this.managementDataSet)).EndInit();
-            this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tomatoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tomatoBindingNavigator)).EndInit();
             this.tomatoBindingNavigator.ResumeLayout(false);
             this.tomatoBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tomatoDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,9 +310,6 @@ namespace Management.Forms
 
         #endregion
 
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabControl tabControl1;
         private ManagementDataSet managementDataSet;
         private System.Windows.Forms.BindingSource tomatoBindingSource;
         private ManagementDataSetTableAdapters.tomatoTableAdapter tomatoTableAdapter;
@@ -388,14 +327,13 @@ namespace Management.Forms
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton tomatoBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tdnumDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tdnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tdtypeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tdlenthDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tdtimeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn accountDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tdcounterDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView tomatoDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
     }
 }

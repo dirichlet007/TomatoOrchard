@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 namespace Management.DataBaseHelper
 {
@@ -45,7 +41,8 @@ namespace Management.DataBaseHelper
              conn.Close(); 
              return myDataSet;
          }*/
-        public DataSet SqlSet(string sql) {
+        public DataSet SqlSet(string sql)
+        {
             //创建 SQLConnection 的实例
             SqlConnection conn = null;
             conn = new SqlConnection(connectString);
@@ -82,9 +79,9 @@ namespace Management.DataBaseHelper
             }
             finally
             {
-                
+
                 conn.Close();
-                
+
             }
         }
     }

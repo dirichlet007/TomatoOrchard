@@ -1,15 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Management.DataBaseHelper;
+using System;
 using System.Windows.Forms;
-
-using System.Data.SqlClient;
-using Management.DataBaseHelper;
 namespace Management.Forms
 {
     public partial class AddBacklog : Form
@@ -41,7 +32,7 @@ namespace Management.Forms
 
         private bool check()
         {
-           if (this.rtbname.Text == "")
+            if (this.rtbname.Text == "")
             {
                 MessageBox.Show("请输入待办名称！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.rtbname.Focus();
@@ -70,11 +61,11 @@ namespace Management.Forms
                 string tdtype = cnttype.Text.Trim();
                 string account = "100000";
                 //string bcktp = bcltype.Text.Trim();
-                string tdlen = rtbtime.Text.Trim().Substring(0,2);
-                string tdtime= DateTime.Now.ToString();
-                DBUtil db= new DBUtil();
-                string sql = string.Format(@"set tnum_insert tomato on INSERT INTO tomato
-                    VALUES (null,'{0}','{1}','{2}','{3}','{4}','0' set tnum_insert tomato off);", tdname, tdtype,tdlen,tdtime,account);
+                string tdlen = rtbtime.Text.Trim().Substring(0, 2);
+                string tdtime = DateTime.Now.ToString();
+                DBUtil db = new DBUtil();
+                string sql = string.Format(@"INSERT INTO tomato
+                    VALUES ('{0}','{1}','{2}','{3}','{4}','0');", tdname, tdtype, tdlen, tdtime, account);
                 db.SqlQuery(sql);
                 rfhTmtClk();
                 this.Close();

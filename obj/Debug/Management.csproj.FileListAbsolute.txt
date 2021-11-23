@@ -159,6 +159,17 @@ C:\Users\唐宇峰\Desktop\Management\bin\Debug\System.Memory.xml
 C:\Users\唐宇峰\Desktop\Management\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\唐宇峰\Desktop\Management\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\唐宇峰\Desktop\Management\obj\Debug\Management.csproj.CopyComplete
+F:\GitHub Repository\Management\obj\Debug\Management.csproj.SuggestedBindingRedirects.cache
+F:\GitHub Repository\Management\obj\Debug\Management.Forms.TomatoClock.resources
+F:\GitHub Repository\Management\obj\Debug\Management.Forms.AddBacklog.resources
+F:\GitHub Repository\Management\obj\Debug\Management.Forms.DashBoard.resources
+F:\GitHub Repository\Management\obj\Debug\Management.Login.resources
+F:\GitHub Repository\Management\obj\Debug\Management.Forms.SystemSettings.resources
+F:\GitHub Repository\Management\obj\Debug\Management.Forms.TimeCounter.resources
+F:\GitHub Repository\Management\obj\Debug\Management.Properties.Resources.resources
+F:\GitHub Repository\Management\obj\Debug\Management.csproj.GenerateResource.cache
+F:\GitHub Repository\Management\obj\Debug\Management.csproj.CoreCompileInputs.cache
+F:\GitHub Repository\Management\obj\Debug\Management.csproj.AssemblyReference.cache
 F:\GitHub Repository\Management\bin\Debug\Management.exe.config
 F:\GitHub Repository\Management\bin\Debug\Management.exe
 F:\GitHub Repository\Management\bin\Debug\Management.pdb
@@ -184,18 +195,7 @@ F:\GitHub Repository\Management\bin\Debug\System.Buffers.xml
 F:\GitHub Repository\Management\bin\Debug\System.Memory.xml
 F:\GitHub Repository\Management\bin\Debug\System.Numerics.Vectors.xml
 F:\GitHub Repository\Management\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-F:\GitHub Repository\Management\obj\Debug\Management.csproj.AssemblyReference.cache
-F:\GitHub Repository\Management\obj\Debug\Management.csproj.SuggestedBindingRedirects.cache
-F:\GitHub Repository\Management\obj\Debug\Management.Forms.TomatoClock.resources
-F:\GitHub Repository\Management\obj\Debug\Management.Forms.AddBacklog.resources
-F:\GitHub Repository\Management\obj\Debug\Management.Forms.DashBoard.resources
-F:\GitHub Repository\Management\obj\Debug\Management.Forms.Home.resources
-F:\GitHub Repository\Management\obj\Debug\Management.Login.resources
-F:\GitHub Repository\Management\obj\Debug\Management.Forms.SystemSettings.resources
-F:\GitHub Repository\Management\obj\Debug\Management.Forms.TimeCounter.resources
-F:\GitHub Repository\Management\obj\Debug\Management.Properties.Resources.resources
-F:\GitHub Repository\Management\obj\Debug\Management.csproj.GenerateResource.cache
-F:\GitHub Repository\Management\obj\Debug\Management.csproj.CoreCompileInputs.cache
+F:\GitHub Repository\Management\obj\Debug\Management.Controls.Home.resources
 F:\GitHub Repository\Management\obj\Debug\Management.csproj.CopyComplete
 F:\GitHub Repository\Management\obj\Debug\Management.exe
 F:\GitHub Repository\Management\obj\Debug\Management.pdb

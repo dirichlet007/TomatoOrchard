@@ -1,20 +1,14 @@
-﻿using System;
+﻿using Management.DataBaseHelper;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using System.Data.SqlClient;
-using Management.DataBaseHelper;
 namespace Management.Forms
 {
-  
+
     public partial class TomatoClock : UserControl
-    {  
+    {
         public string Caccount;
         public TomatoClock()
         {
@@ -24,7 +18,7 @@ namespace Management.Forms
         {
             AddBacklog fs = new AddBacklog();
             fs.rfhTmtClk += txtdisplay;
-            fs.ShowDialog();           
+            fs.ShowDialog();
         }
         class Tmtinfo
         {
@@ -33,28 +27,28 @@ namespace Management.Forms
         }
         private void TomatoClock_Load(object sender, EventArgs e)
         {
-           txtdisplay();        
+            txtdisplay();
         }
-        
+
         public void txtdisplay()
         {
-                List<Tmtinfo> bls = new List<Tmtinfo>();         
-                DBUtil db=new DBUtil();
-                string sql = string.Format(@"select tdname,tdtype,tdlenth from tomato ");
-                DataSet ds= db.SqlSet(sql);
-                try
-                {
+            List<Tmtinfo> bls = new List<Tmtinfo>();
+            DBUtil db = new DBUtil();
+            string sql = string.Format(@"select tdname,tdtype,tdlenth from tomato ");
+            DataSet ds = db.SqlSet(sql);
+            try
+            {
                 DataTable myTable = ds.Tables[0];
                 foreach (DataRow myRow in myTable.Rows)
                 {
-                    
-                       //遍历表中的每个单元格
-                        Tmtinfo u = new Tmtinfo();
-                        u.tmtname = myRow[0].ToString();
-                        u.tmttype = myRow[1].ToString();
-                        bls.Add(u);
-                    
-                }              
+
+                    //遍历表中的每个单元格
+                    Tmtinfo u = new Tmtinfo();
+                    u.tmtname = myRow[0].ToString();
+                    u.tmttype = myRow[1].ToString();
+                    bls.Add(u);
+
+                }
                 int len = bls.Count();
                 label2.Text = bls[len - 1].tmtname;
                 label3.Text = bls[len - 2].tmtname;
@@ -66,14 +60,14 @@ namespace Management.Forms
                 label9.Text = bls[len - 4].tmttype;
             }
 
-               
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             finally
             {
-                
+
             }
             //for循环写法；
             //int i = 1;
@@ -90,35 +84,35 @@ namespace Management.Forms
 
 
 
-        }           
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-    
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-   
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-   
+
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            TimeCounter fs = new TimeCounter(); 
+            TimeCounter fs = new TimeCounter();
             fs.Taccount = Caccount;
             fs.tdname = label2.Text.ToString();
             fs.ShowDialog();
@@ -150,17 +144,17 @@ namespace Management.Forms
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
         }
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-          
+
         }
 
         private void button5_Click_2(object sender, EventArgs e)
         {
-         
+
         }
 
         private void tomatoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
