@@ -89,11 +89,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\Home.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Forms\Statistics.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls\Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="Forms\Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\TimeCounter.cs">
       <SubType>Form</SubType>
@@ -141,9 +141,6 @@
     <Compile Include="ProjectHelper\FormHelper.cs" />
     <Compile Include="ProjectHelper\Try.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Controls\Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Controls\TomatoClock.resx">
       <DependentUpon>TomatoClock.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SystemSettings.resx">
       <DependentUpon>SystemSettings.cs</DependentUpon>

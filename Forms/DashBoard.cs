@@ -2,7 +2,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using  Management.Controls;
+
 namespace Management.Forms
 {
 
@@ -102,9 +102,9 @@ namespace Management.Forms
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            Home fs = new Home();
+           /* Home fs = new Home();
             fmhpr.closeFrm(panelmain);
-            fmhpr.AddControlsToPanel(fs, panelmain);
+            fmhpr.AddControlsToPanel(fs, panelmain);*/
         }
         public void ChangeColor(Color c)
         {
@@ -148,6 +148,13 @@ namespace Management.Forms
         private void panelmain_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnreader_Click(object sender, EventArgs e)
+        {
+            Statistics fs = new Statistics();
+            fmhpr.closeFrm(panelmain);
+            fmhpr.openFrm(fs, panelmain); ;
         }
     }
 }

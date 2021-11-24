@@ -33,6 +33,7 @@ namespace Management.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             this.toppanel = new System.Windows.Forms.FlowLayoutPanel();
             this.labeltitle = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnclose = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -55,7 +56,6 @@ namespace Management.Forms
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnfold = new System.Windows.Forms.Button();
             this.panelmain = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.toppanel.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -84,6 +84,18 @@ namespace Management.Forms
             this.labeltitle.Size = new System.Drawing.Size(252, 44);
             this.labeltitle.TabIndex = 3;
             this.labeltitle.Text = "欢迎！";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.BackColor = System.Drawing.Color.Orange;
+            this.label4.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FloralWhite;
+            this.label4.Location = new System.Drawing.Point(261, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(247, 44);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "权限";
             // 
             // label1
             // 
@@ -252,9 +264,10 @@ namespace Management.Forms
             this.btnreader.Name = "btnreader";
             this.btnreader.Size = new System.Drawing.Size(229, 60);
             this.btnreader.TabIndex = 30;
-            this.btnreader.Text = "     暂定";
+            this.btnreader.Text = "     统计";
             this.btnreader.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnreader.UseVisualStyleBackColor = false;
+            this.btnreader.Click += new System.EventHandler(this.btnreader_Click);
             // 
             // btnbookmanage
             // 
@@ -373,18 +386,6 @@ namespace Management.Forms
             this.panelmain.Size = new System.Drawing.Size(1336, 721);
             this.panelmain.TabIndex = 24;
             this.panelmain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelmain_Paint);
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.BackColor = System.Drawing.Color.Orange;
-            this.label4.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FloralWhite;
-            this.label4.Location = new System.Drawing.Point(261, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(247, 44);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "权限";
             // 
             // DashBoard
             // 

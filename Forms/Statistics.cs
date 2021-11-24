@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Management.Controls
+namespace Management.Forms
 {
-    public partial class Home : UserControl
+    public partial class Statistics : Form
     {
-        public Home()
+        public Statistics()
         {
             InitializeComponent();
         }
@@ -22,6 +22,13 @@ namespace Management.Controls
             this.Validate();
             this.tomatoBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.managementDataSet);
+
+        }
+
+        private void Statistics_Load(object sender, EventArgs e)
+        {
+            // TODO: 这行代码将数据加载到表“managementDataSet.tomato”中。您可以根据需要移动或删除它。
+            this.tomatoTableAdapter.Fill(this.managementDataSet.tomato);
 
         }
     }

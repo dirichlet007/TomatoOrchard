@@ -195,7 +195,7 @@ F:\GitHub Repository\Management\bin\Debug\System.Buffers.xml
 F:\GitHub Repository\Management\bin\Debug\System.Memory.xml
 F:\GitHub Repository\Management\bin\Debug\System.Numerics.Vectors.xml
 F:\GitHub Repository\Management\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-F:\GitHub Repository\Management\obj\Debug\Management.Controls.Home.resources
 F:\GitHub Repository\Management\obj\Debug\Management.csproj.CopyComplete
 F:\GitHub Repository\Management\obj\Debug\Management.exe
 F:\GitHub Repository\Management\obj\Debug\Management.pdb
+F:\GitHub Repository\Management\obj\Debug\Management.Forms.Statistics.resources
