@@ -89,6 +89,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\mybutton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\mybutton.Designer.cs">
+      <DependentUpon>mybutton.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Statistics.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,18 @@
     <Compile Include="Controls\TomatoClock.Designer.cs">
       <DependentUpon>TomatoClock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Tomato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tomato.Designer.cs">
+      <DependentUpon>Tomato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Unitbutton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Unitbutton.Designer.cs">
+      <DependentUpon>Unitbutton.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagementDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -141,6 +159,9 @@
     <Compile Include="ProjectHelper\FormHelper.cs" />
     <Compile Include="ProjectHelper\Try.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Controls\mybutton.resx">
+      <DependentUpon>mybutton.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\TomatoClock.resx">
       <DependentUpon>TomatoClock.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +182,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TimeCounter.resx">
       <DependentUpon>TimeCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tomato.resx">
+      <DependentUpon>Tomato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Unitbutton.resx">
+      <DependentUpon>Unitbutton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

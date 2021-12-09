@@ -31,16 +31,7 @@ namespace Management.DataBaseHelper
 
 
         }
-        /* public DataSet SqlSet(string sql,string tablename)
-         {
-             conn = new SqlConnection(connectString);
-             conn.Open();                    
-             SqlDataAdapter myDataAdapter = new SqlDataAdapter(sql, conn);
-             DataSet myDataSet = new DataSet();      // 创建DataSet
-             myDataAdapter.Fill(myDataSet,tablename);               
-             conn.Close(); 
-             return myDataSet;
-         }*/
+
         public DataSet SqlSet(string sql)
         {
             //创建 SQLConnection 的实例

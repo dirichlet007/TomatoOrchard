@@ -34,7 +34,7 @@ namespace Management.Forms
             { label4.Text = "权限:  超级管理员"; }
             else if (authority == "2")
             { label4.Text = "权限:  普通管理员"; }
-            else if(authority == "3")
+            else if (authority == "3")
             {
                 label4.Text = "权限:  用户";
             }
@@ -102,9 +102,9 @@ namespace Management.Forms
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-           /* Home fs = new Home();
-            fmhpr.closeFrm(panelmain);
-            fmhpr.AddControlsToPanel(fs, panelmain);*/
+            /* Home fs = new Home();
+             fmhpr.closeFrm(panelmain);
+             fmhpr.AddControlsToPanel(fs, panelmain);*/
         }
         public void ChangeColor(Color c)
         {
@@ -128,10 +128,15 @@ namespace Management.Forms
 
         private void btnbookmanage_Click(object sender, EventArgs e)
         {
+            /*
             TomatoClock ttc = new TomatoClock();
             ttc.Caccount = account;
             fmhpr.closeFrm(panelmain);
             fmhpr.AddControlsToPanel(ttc, panelmain);
+            */
+            Tomato fs = new Tomato();
+            fmhpr.closeFrm(panelmain);
+            fmhpr.openFrm(fs, panelmain);
 
         }
         private void btnsystemset_Click(object sender, EventArgs e)

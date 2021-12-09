@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using Management.Forms;
 namespace Management
 {
     static class Program
