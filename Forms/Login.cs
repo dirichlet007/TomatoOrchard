@@ -68,7 +68,7 @@ namespace Management
                 button1.Text = "正在登录...";
 
                 string sql = string.Format(@"select count(*) from userinfo where account='{0}'and password ='{1}'", account, password);
-                string sql2 = string.Format(@"select username,authority,theme from userinfo where account='{0}'and password ='{1}'", account, password);
+                string sql2 = string.Format(@"select username,authority,theme,uid from userinfo where account='{0}'and password ='{1}'", account, password);
                 if (db.SqlCheck(sql))
                 {
 
@@ -78,7 +78,7 @@ namespace Management
                     fs.username = ds.Tables[0].Rows[0][0].ToString();
                     fs.authority = ds.Tables[0].Rows[0][1].ToString();
                     fs.theme = ds.Tables[0].Rows[0][2].ToString();
-                    fs.account = account;
+                    fs.uid = ds.Tables[0].Rows[0][3].ToString();
                     fs.Show();
                     button1.Text = "登录";
 

@@ -29,7 +29,7 @@ namespace Management.Forms
         {
 
         }
-
+        public string uid;
         private bool check()
         {
             if (this.rtbname.Text == "")
@@ -59,13 +59,12 @@ namespace Management.Forms
             {
                 string tdname = rtbname.Text.Trim();
                 string tdtype = cnttype.Text.Trim();
-                string account = "100000";
-                //string bcktp = bcltype.Text.Trim();
-                string tdlen = rtbtime.Text.Trim().Substring(0, 2);
+                string uid = "1";
+                string tdlenth = rtbtime.Text.Trim().Substring(0, 2);
                 string tdtime = DateTime.Now.ToString();
                 DBUtil db = new DBUtil();
-                string sql = string.Format(@"INSERT INTO tomato
-                    VALUES ('{0}','{1}','{2}','{3}','{4}','0');", tdname, tdtype, tdlen, tdtime, account);
+                string sql = string.Format(@"INSERT INTO tomato(tdname,tdtype,tdlenth,tdtime,uid)
+                    VALUES ('{0}','{1}',{2},'{3}','{4}');", tdname, tdtype, tdlenth, tdtime, uid);
                 db.SqlQuery(sql);
                 rfhTmtClk();
                 this.Close();
@@ -78,6 +77,46 @@ namespace Management.Forms
             cnttype.Clear();
             bcltype.Clear();
             rtbtime.Clear();
+        }
+
+        private void bcltype_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rtbtime_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rtbname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cnttype_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

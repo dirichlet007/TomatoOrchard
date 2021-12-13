@@ -21,5 +21,10 @@ namespace Management.Controls
             InitializeComponent();
         }
 
+        private void mybutton_Load(object sender, EventArgs e)
+        {
+            label1.Text = label1_text;
+            label2.Text = label2_text;
+        }
     }
 }

@@ -56,6 +56,7 @@ namespace Management.Forms
             this.label8.Size = new System.Drawing.Size(388, 51);
             this.label8.TabIndex = 78;
             this.label8.Text = "添  加  待 办 信  息";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // btnClear
             // 
@@ -114,6 +115,7 @@ namespace Management.Forms
             this.rtbname.Size = new System.Drawing.Size(371, 53);
             this.rtbname.TabIndex = 92;
             this.rtbname.Text = "";
+            this.rtbname.TextChanged += new System.EventHandler(this.rtbname_TextChanged);
             // 
             // label1
             // 
@@ -135,6 +137,7 @@ namespace Management.Forms
             this.label2.Size = new System.Drawing.Size(262, 51);
             this.label2.TabIndex = 97;
             this.label2.Text = "计时方式";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -145,6 +148,7 @@ namespace Management.Forms
             this.label3.Size = new System.Drawing.Size(259, 51);
             this.label3.TabIndex = 98;
             this.label3.Text = "待办类型";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -155,6 +159,7 @@ namespace Management.Forms
             this.label4.Size = new System.Drawing.Size(258, 51);
             this.label4.TabIndex = 99;
             this.label4.Text = "专注时间";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // button1
             // 
@@ -181,6 +186,7 @@ namespace Management.Forms
             this.rtbtime.Size = new System.Drawing.Size(371, 53);
             this.rtbtime.TabIndex = 103;
             this.rtbtime.Text = "25分钟\n";
+            this.rtbtime.TextChanged += new System.EventHandler(this.rtbtime_TextChanged);
             // 
             // bcltype
             // 
@@ -190,6 +196,7 @@ namespace Management.Forms
             this.bcltype.Size = new System.Drawing.Size(371, 53);
             this.bcltype.TabIndex = 104;
             this.bcltype.Text = "普通番茄钟\n";
+            this.bcltype.TextChanged += new System.EventHandler(this.bcltype_TextChanged);
             // 
             // cnttype
             // 
@@ -199,6 +206,7 @@ namespace Management.Forms
             this.cnttype.Size = new System.Drawing.Size(371, 53);
             this.cnttype.TabIndex = 105;
             this.cnttype.Text = "逆时针";
+            this.cnttype.TextChanged += new System.EventHandler(this.cnttype_TextChanged);
             // 
             // AddBacklog
             // 

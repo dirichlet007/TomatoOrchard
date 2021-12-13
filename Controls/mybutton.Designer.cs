@@ -83,6 +83,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "mybutton";
             this.Size = new System.Drawing.Size(1325, 100);
+            this.Load += new System.EventHandler(this.mybutton_Load);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 

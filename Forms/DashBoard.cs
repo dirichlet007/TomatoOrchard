@@ -11,7 +11,7 @@ namespace Management.Forms
         public string username;
         public string authority;
         public string theme;
-        public string account;
+        public string uid;
         FormHelper fmhpr = new FormHelper();
         int PanelWidth;
         bool isCollapsed;
@@ -157,9 +157,27 @@ namespace Management.Forms
 
         private void btnreader_Click(object sender, EventArgs e)
         {
-            Statistics fs = new Statistics();
+            TomatoStatistics fs = new TomatoStatistics();
+            fs.uid = uid;
             fmhpr.closeFrm(panelmain);
-            fmhpr.openFrm(fs, panelmain); ;
+            fmhpr.openFrm(fs, panelmain);
+        }
+
+        private void btnqueryinfo_Click(object sender, EventArgs e)
+        {
+            BillsStatistics fs = new BillsStatistics();
+            fs.uid = uid;
+            fmhpr.closeFrm(panelmain);
+            fmhpr.openFrm(fs, panelmain);
+
+        }
+
+        private void btnborrow_Click(object sender, EventArgs e)
+        {
+            Bills fs = new Bills();
+            fs.uid = uid;
+            fmhpr.closeFrm(panelmain);
+            fmhpr.openFrm(fs, panelmain);
         }
     }
 }

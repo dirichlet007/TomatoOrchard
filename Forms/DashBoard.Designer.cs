@@ -226,9 +226,10 @@ namespace Management.Forms
             this.btnqueryinfo.Name = "btnqueryinfo";
             this.btnqueryinfo.Size = new System.Drawing.Size(229, 60);
             this.btnqueryinfo.TabIndex = 28;
-            this.btnqueryinfo.Text = "     暂定";
+            this.btnqueryinfo.Text = "     账单统计";
             this.btnqueryinfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnqueryinfo.UseVisualStyleBackColor = false;
+            this.btnqueryinfo.Click += new System.EventHandler(this.btnqueryinfo_Click);
             // 
             // btnborrow
             // 
@@ -245,9 +246,10 @@ namespace Management.Forms
             this.btnborrow.Name = "btnborrow";
             this.btnborrow.Size = new System.Drawing.Size(229, 60);
             this.btnborrow.TabIndex = 29;
-            this.btnborrow.Text = "     暂定";
+            this.btnborrow.Text = "     账单";
             this.btnborrow.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnborrow.UseVisualStyleBackColor = false;
+            this.btnborrow.Click += new System.EventHandler(this.btnborrow_Click);
             // 
             // btnreader
             // 
@@ -264,7 +266,7 @@ namespace Management.Forms
             this.btnreader.Name = "btnreader";
             this.btnreader.Size = new System.Drawing.Size(229, 60);
             this.btnreader.TabIndex = 30;
-            this.btnreader.Text = "     统计";
+            this.btnreader.Text = "     番茄统计";
             this.btnreader.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnreader.UseVisualStyleBackColor = false;
             this.btnreader.Click += new System.EventHandler(this.btnreader_Click);
