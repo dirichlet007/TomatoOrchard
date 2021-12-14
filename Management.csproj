@@ -108,6 +108,12 @@
     <Compile Include="Forms\BillsStatistics.Designer.cs">
       <DependentUpon>BillsStatistics.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TimeCounter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,12 +144,6 @@
     <Compile Include="Forms\SystemSettings.Designer.cs">
       <DependentUpon>SystemSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\TomatoClock.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\TomatoClock.Designer.cs">
-      <DependentUpon>TomatoClock.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Tomato.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +156,12 @@
     <Compile Include="Forms\TomatoStatistics.Designer.cs">
       <DependentUpon>TomatoStatistics.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\UserManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserManager.Designer.cs">
+      <DependentUpon>UserManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagementDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -164,13 +170,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="ProjectHelper\DataBaseHelper.cs" />
     <Compile Include="ProjectHelper\FormHelper.cs" />
-    <Compile Include="ProjectHelper\Try.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\mybutton.resx">
       <DependentUpon>mybutton.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\TomatoClock.resx">
-      <DependentUpon>TomatoClock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddBacklog.resx">
       <DependentUpon>AddBacklog.cs</DependentUpon>
@@ -187,6 +189,9 @@
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SystemSettings.resx">
       <DependentUpon>SystemSettings.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TomatoStatistics.resx">
       <DependentUpon>TomatoStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserManager.resx">
+      <DependentUpon>UserManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -177,6 +177,9 @@ namespace Management
             fs.Close();
         }
 
-
+        private void label6_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://wpa.qq.com/msgrd?v=3&uin=1508022928&site=qq&menu=yes");
+        }
     }
 }

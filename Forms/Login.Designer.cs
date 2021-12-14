@@ -98,7 +98,7 @@ namespace Management
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 49);
             this.label1.TabIndex = 0;
-            this.label1.Text = "峰悦管理系统";
+            this.label1.Text = "宇峰管理系统";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cb
@@ -154,7 +154,7 @@ namespace Management
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.label4.Location = new System.Drawing.Point(474, 529);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 32);
+            this.label4.Size = new System.Drawing.Size(64, 32);
             this.label4.TabIndex = 16;
             this.label4.Text = "密码";
             // 
@@ -168,6 +168,7 @@ namespace Management
             this.label6.Size = new System.Drawing.Size(112, 27);
             this.label6.TabIndex = 11;
             this.label6.Text = "忘记密码？";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label8
             // 
@@ -176,7 +177,7 @@ namespace Management
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.label8.Location = new System.Drawing.Point(474, 459);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 32);
+            this.label8.Size = new System.Drawing.Size(64, 32);
             this.label8.TabIndex = 14;
             this.label8.Text = "账号";
             // 

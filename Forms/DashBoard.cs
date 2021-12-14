@@ -102,9 +102,9 @@ namespace Management.Forms
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            /* Home fs = new Home();
-             fmhpr.closeFrm(panelmain);
-             fmhpr.AddControlsToPanel(fs, panelmain);*/
+             Main fs = new Main();
+            fmhpr.closeFrm(panelmain);
+            fmhpr.openFrm(fs, panelmain);
         }
         public void ChangeColor(Color c)
         {
@@ -112,14 +112,14 @@ namespace Management.Forms
             this.btnclose.BackColor = c;
             this.panelLeft.BackColor = c;
             this.labeltitle.BackColor = c;
-            this.btnHome.BackColor = c;
-            this.btnbookmanage.BackColor = c;
-            this.btnreader.BackColor = c;
-            this.btnborrow.BackColor = c;
-            this.btnqueryinfo.BackColor = c;
-            this.btnsystemset.BackColor = c;
-            this.btnbillmanage.BackColor = c;
-            this.btnusermanage.BackColor = c;
+            this.btnMain.BackColor = c;
+            this.btnTomato.BackColor = c;
+            this.btnTomatoStatistic.BackColor = c;
+            this.btnBills.BackColor = c;
+            this.btnBillsStatistic.BackColor = c;
+            this.btnSystemSet.BackColor = c;
+            this.btnManager.BackColor = c;
+            this.btn.BackColor = c;
             this.btnfold.BackColor = c;
             this.label1.ForeColor = c;
             this.label4.BackColor = c;
@@ -128,12 +128,6 @@ namespace Management.Forms
 
         private void btnbookmanage_Click(object sender, EventArgs e)
         {
-            /*
-            TomatoClock ttc = new TomatoClock();
-            ttc.Caccount = account;
-            fmhpr.closeFrm(panelmain);
-            fmhpr.AddControlsToPanel(ttc, panelmain);
-            */
             Tomato fs = new Tomato();
             fmhpr.closeFrm(panelmain);
             fmhpr.openFrm(fs, panelmain);
@@ -176,6 +170,13 @@ namespace Management.Forms
         {
             Bills fs = new Bills();
             fs.uid = uid;
+            fmhpr.closeFrm(panelmain);
+            fmhpr.openFrm(fs, panelmain);
+        }
+
+        private void btnManager_Click(object sender, EventArgs e)
+        {
+            UserManager fs = new UserManager();
             fmhpr.closeFrm(panelmain);
             fmhpr.openFrm(fs, panelmain);
         }

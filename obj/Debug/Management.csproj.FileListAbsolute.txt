@@ -1,10 +1,8 @@
 F:\GitHub Repository\Management\obj\Debug\Management.csproj.SuggestedBindingRedirects.cache
 F:\GitHub Repository\Management\obj\Debug\Management.csproj.AssemblyReference.cache
-F:\GitHub Repository\Management\obj\Debug\Management.Forms.TomatoClock.resources
 F:\GitHub Repository\Management\obj\Debug\Management.Forms.AddBacklog.resources
 F:\GitHub Repository\Management\obj\Debug\Management.Forms.DashBoard.resources
 F:\GitHub Repository\Management\obj\Debug\Management.Login.resources
-F:\GitHub Repository\Management\obj\Debug\Management.Forms.Statistics.resources
 F:\GitHub Repository\Management\obj\Debug\Management.Forms.SystemSettings.resources
 F:\GitHub Repository\Management\obj\Debug\Management.Forms.TimeCounter.resources
 F:\GitHub Repository\Management\obj\Debug\Management.Forms.Tomato.resources
@@ -40,7 +38,6 @@ F:\GitHub Repository\Management\obj\Debug\Management.csproj.CopyComplete
 F:\GitHub Repository\Management\obj\Debug\Management.exe
 F:\GitHub Repository\Management\obj\Debug\Management.pdb
 F:\GitHub Repository\Management\obj\Debug\Management.Controls.mybutton.resources
-F:\GitHub Repository\Management\obj\Debug\Management.Forms.Unitbutton.resources
 C:\Users\唐宇峰\Desktop\C#\Management-main\obj\Debug\Management.csproj.SuggestedBindingRedirects.cache
 C:\Users\唐宇峰\Desktop\C#\Management-main\obj\Debug\Management.exe
 C:\Users\唐宇峰\Desktop\C#\Management-main\obj\Debug\Management.pdb
@@ -127,3 +124,8 @@ C:\Users\唐宇峰\Desktop\Management-main\obj\Debug\Management.csproj.CoreCompi
 C:\Users\唐宇峰\Desktop\Management-main\obj\Debug\Management.csproj.CopyComplete
 C:\Users\唐宇峰\Desktop\Management-main\obj\Debug\Management.exe
 C:\Users\唐宇峰\Desktop\Management-main\obj\Debug\Management.pdb
+F:\GitHub Repository\Management\obj\Debug\Management.Forms.Bills.resources
+F:\GitHub Repository\Management\obj\Debug\Management.Forms.BillsStatistics.resources
+F:\GitHub Repository\Management\obj\Debug\Management.Forms.Main.resources
+F:\GitHub Repository\Management\obj\Debug\Management.Forms.TomatoStatistics.resources
+F:\GitHub Repository\Management\obj\Debug\Management.Forms.UserManager.resources

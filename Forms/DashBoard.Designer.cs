@@ -42,14 +42,14 @@ namespace Management.Forms
             this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.timer5 = new System.Windows.Forms.Timer(this.components);
-            this.btnusermanage = new System.Windows.Forms.Button();
-            this.btnbillmanage = new System.Windows.Forms.Button();
-            this.btnsystemset = new System.Windows.Forms.Button();
-            this.btnqueryinfo = new System.Windows.Forms.Button();
-            this.btnborrow = new System.Windows.Forms.Button();
-            this.btnreader = new System.Windows.Forms.Button();
-            this.btnbookmanage = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
+            this.btnManager = new System.Windows.Forms.Button();
+            this.btnSystemSet = new System.Windows.Forms.Button();
+            this.btnBillsStatistic = new System.Windows.Forms.Button();
+            this.btnBills = new System.Windows.Forms.Button();
+            this.btnTomatoStatistic = new System.Windows.Forms.Button();
+            this.btnTomato = new System.Windows.Forms.Button();
+            this.btnMain = new System.Windows.Forms.Button();
             this.panelLeft = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -106,7 +106,7 @@ namespace Management.Forms
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 49);
             this.label1.TabIndex = 2;
-            this.label1.Text = "峰悦管理系统";
+            this.label1.Text = "宇峰管理系统";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // btnclose
@@ -153,176 +153,177 @@ namespace Management.Forms
             // 
             this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
             // 
-            // btnusermanage
+            // btn
             // 
-            this.btnusermanage.BackColor = System.Drawing.Color.Orange;
-            this.btnusermanage.FlatAppearance.BorderSize = 0;
-            this.btnusermanage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnusermanage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnusermanage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnusermanage.ForeColor = System.Drawing.Color.White;
-            this.btnusermanage.Image = ((System.Drawing.Image)(resources.GetObject("btnusermanage.Image")));
-            this.btnusermanage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnusermanage.Location = new System.Drawing.Point(7, 596);
-            this.btnusermanage.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnusermanage.Name = "btnusermanage";
-            this.btnusermanage.Size = new System.Drawing.Size(229, 60);
-            this.btnusermanage.TabIndex = 25;
-            this.btnusermanage.Text = "     暂定";
-            this.btnusermanage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnusermanage.UseVisualStyleBackColor = false;
+            this.btn.BackColor = System.Drawing.Color.Orange;
+            this.btn.FlatAppearance.BorderSize = 0;
+            this.btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn.ForeColor = System.Drawing.Color.White;
+            this.btn.Image = ((System.Drawing.Image)(resources.GetObject("btn.Image")));
+            this.btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn.Location = new System.Drawing.Point(7, 596);
+            this.btn.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(229, 60);
+            this.btn.TabIndex = 25;
+            this.btn.Text = "     暂定";
+            this.btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn.UseVisualStyleBackColor = false;
             // 
-            // btnbillmanage
+            // btnManager
             // 
-            this.btnbillmanage.BackColor = System.Drawing.Color.Orange;
-            this.btnbillmanage.FlatAppearance.BorderSize = 0;
-            this.btnbillmanage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnbillmanage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnbillmanage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbillmanage.ForeColor = System.Drawing.Color.White;
-            this.btnbillmanage.Image = ((System.Drawing.Image)(resources.GetObject("btnbillmanage.Image")));
-            this.btnbillmanage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnbillmanage.Location = new System.Drawing.Point(7, 536);
-            this.btnbillmanage.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnbillmanage.Name = "btnbillmanage";
-            this.btnbillmanage.Size = new System.Drawing.Size(229, 60);
-            this.btnbillmanage.TabIndex = 26;
-            this.btnbillmanage.Text = "     暂定";
-            this.btnbillmanage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnbillmanage.UseVisualStyleBackColor = false;
+            this.btnManager.BackColor = System.Drawing.Color.Orange;
+            this.btnManager.FlatAppearance.BorderSize = 0;
+            this.btnManager.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnManager.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManager.ForeColor = System.Drawing.Color.White;
+            this.btnManager.Image = ((System.Drawing.Image)(resources.GetObject("btnManager.Image")));
+            this.btnManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnManager.Location = new System.Drawing.Point(7, 536);
+            this.btnManager.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnManager.Name = "btnManager";
+            this.btnManager.Size = new System.Drawing.Size(229, 60);
+            this.btnManager.TabIndex = 26;
+            this.btnManager.Text = "     用户管理";
+            this.btnManager.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnManager.UseVisualStyleBackColor = false;
+            this.btnManager.Click += new System.EventHandler(this.btnManager_Click);
             // 
-            // btnsystemset
+            // btnSystemSet
             // 
-            this.btnsystemset.BackColor = System.Drawing.Color.Orange;
-            this.btnsystemset.FlatAppearance.BorderSize = 0;
-            this.btnsystemset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnsystemset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnsystemset.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsystemset.ForeColor = System.Drawing.Color.White;
-            this.btnsystemset.Image = ((System.Drawing.Image)(resources.GetObject("btnsystemset.Image")));
-            this.btnsystemset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsystemset.Location = new System.Drawing.Point(7, 476);
-            this.btnsystemset.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnsystemset.Name = "btnsystemset";
-            this.btnsystemset.Size = new System.Drawing.Size(229, 60);
-            this.btnsystemset.TabIndex = 27;
-            this.btnsystemset.Text = "     系统主题";
-            this.btnsystemset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnsystemset.UseVisualStyleBackColor = false;
-            this.btnsystemset.Click += new System.EventHandler(this.btnsystemset_Click);
+            this.btnSystemSet.BackColor = System.Drawing.Color.Orange;
+            this.btnSystemSet.FlatAppearance.BorderSize = 0;
+            this.btnSystemSet.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSystemSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSystemSet.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSystemSet.ForeColor = System.Drawing.Color.White;
+            this.btnSystemSet.Image = ((System.Drawing.Image)(resources.GetObject("btnSystemSet.Image")));
+            this.btnSystemSet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSystemSet.Location = new System.Drawing.Point(7, 476);
+            this.btnSystemSet.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnSystemSet.Name = "btnSystemSet";
+            this.btnSystemSet.Size = new System.Drawing.Size(229, 60);
+            this.btnSystemSet.TabIndex = 27;
+            this.btnSystemSet.Text = "     系统主题";
+            this.btnSystemSet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSystemSet.UseVisualStyleBackColor = false;
+            this.btnSystemSet.Click += new System.EventHandler(this.btnsystemset_Click);
             // 
-            // btnqueryinfo
+            // btnBillsStatistic
             // 
-            this.btnqueryinfo.BackColor = System.Drawing.Color.Orange;
-            this.btnqueryinfo.FlatAppearance.BorderSize = 0;
-            this.btnqueryinfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnqueryinfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnqueryinfo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnqueryinfo.ForeColor = System.Drawing.Color.White;
-            this.btnqueryinfo.Image = ((System.Drawing.Image)(resources.GetObject("btnqueryinfo.Image")));
-            this.btnqueryinfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnqueryinfo.Location = new System.Drawing.Point(7, 416);
-            this.btnqueryinfo.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnqueryinfo.Name = "btnqueryinfo";
-            this.btnqueryinfo.Size = new System.Drawing.Size(229, 60);
-            this.btnqueryinfo.TabIndex = 28;
-            this.btnqueryinfo.Text = "     账单统计";
-            this.btnqueryinfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnqueryinfo.UseVisualStyleBackColor = false;
-            this.btnqueryinfo.Click += new System.EventHandler(this.btnqueryinfo_Click);
+            this.btnBillsStatistic.BackColor = System.Drawing.Color.Orange;
+            this.btnBillsStatistic.FlatAppearance.BorderSize = 0;
+            this.btnBillsStatistic.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnBillsStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBillsStatistic.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBillsStatistic.ForeColor = System.Drawing.Color.White;
+            this.btnBillsStatistic.Image = ((System.Drawing.Image)(resources.GetObject("btnBillsStatistic.Image")));
+            this.btnBillsStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBillsStatistic.Location = new System.Drawing.Point(7, 416);
+            this.btnBillsStatistic.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnBillsStatistic.Name = "btnBillsStatistic";
+            this.btnBillsStatistic.Size = new System.Drawing.Size(229, 60);
+            this.btnBillsStatistic.TabIndex = 28;
+            this.btnBillsStatistic.Text = "     账单统计";
+            this.btnBillsStatistic.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBillsStatistic.UseVisualStyleBackColor = false;
+            this.btnBillsStatistic.Click += new System.EventHandler(this.btnqueryinfo_Click);
             // 
-            // btnborrow
+            // btnBills
             // 
-            this.btnborrow.BackColor = System.Drawing.Color.Orange;
-            this.btnborrow.FlatAppearance.BorderSize = 0;
-            this.btnborrow.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnborrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnborrow.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnborrow.ForeColor = System.Drawing.Color.White;
-            this.btnborrow.Image = ((System.Drawing.Image)(resources.GetObject("btnborrow.Image")));
-            this.btnborrow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnborrow.Location = new System.Drawing.Point(7, 356);
-            this.btnborrow.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnborrow.Name = "btnborrow";
-            this.btnborrow.Size = new System.Drawing.Size(229, 60);
-            this.btnborrow.TabIndex = 29;
-            this.btnborrow.Text = "     账单";
-            this.btnborrow.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnborrow.UseVisualStyleBackColor = false;
-            this.btnborrow.Click += new System.EventHandler(this.btnborrow_Click);
+            this.btnBills.BackColor = System.Drawing.Color.Orange;
+            this.btnBills.FlatAppearance.BorderSize = 0;
+            this.btnBills.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnBills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBills.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBills.ForeColor = System.Drawing.Color.White;
+            this.btnBills.Image = ((System.Drawing.Image)(resources.GetObject("btnBills.Image")));
+            this.btnBills.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBills.Location = new System.Drawing.Point(7, 356);
+            this.btnBills.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnBills.Name = "btnBills";
+            this.btnBills.Size = new System.Drawing.Size(229, 60);
+            this.btnBills.TabIndex = 29;
+            this.btnBills.Text = "     账单";
+            this.btnBills.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBills.UseVisualStyleBackColor = false;
+            this.btnBills.Click += new System.EventHandler(this.btnborrow_Click);
             // 
-            // btnreader
+            // btnTomatoStatistic
             // 
-            this.btnreader.BackColor = System.Drawing.Color.Orange;
-            this.btnreader.FlatAppearance.BorderSize = 0;
-            this.btnreader.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnreader.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnreader.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnreader.ForeColor = System.Drawing.Color.White;
-            this.btnreader.Image = ((System.Drawing.Image)(resources.GetObject("btnreader.Image")));
-            this.btnreader.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnreader.Location = new System.Drawing.Point(7, 296);
-            this.btnreader.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnreader.Name = "btnreader";
-            this.btnreader.Size = new System.Drawing.Size(229, 60);
-            this.btnreader.TabIndex = 30;
-            this.btnreader.Text = "     番茄统计";
-            this.btnreader.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnreader.UseVisualStyleBackColor = false;
-            this.btnreader.Click += new System.EventHandler(this.btnreader_Click);
+            this.btnTomatoStatistic.BackColor = System.Drawing.Color.Orange;
+            this.btnTomatoStatistic.FlatAppearance.BorderSize = 0;
+            this.btnTomatoStatistic.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnTomatoStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTomatoStatistic.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTomatoStatistic.ForeColor = System.Drawing.Color.White;
+            this.btnTomatoStatistic.Image = ((System.Drawing.Image)(resources.GetObject("btnTomatoStatistic.Image")));
+            this.btnTomatoStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTomatoStatistic.Location = new System.Drawing.Point(7, 296);
+            this.btnTomatoStatistic.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnTomatoStatistic.Name = "btnTomatoStatistic";
+            this.btnTomatoStatistic.Size = new System.Drawing.Size(229, 60);
+            this.btnTomatoStatistic.TabIndex = 30;
+            this.btnTomatoStatistic.Text = "     番茄统计";
+            this.btnTomatoStatistic.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTomatoStatistic.UseVisualStyleBackColor = false;
+            this.btnTomatoStatistic.Click += new System.EventHandler(this.btnreader_Click);
             // 
-            // btnbookmanage
+            // btnTomato
             // 
-            this.btnbookmanage.BackColor = System.Drawing.Color.Orange;
-            this.btnbookmanage.FlatAppearance.BorderSize = 0;
-            this.btnbookmanage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnbookmanage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnbookmanage.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbookmanage.ForeColor = System.Drawing.Color.White;
-            this.btnbookmanage.Image = ((System.Drawing.Image)(resources.GetObject("btnbookmanage.Image")));
-            this.btnbookmanage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnbookmanage.Location = new System.Drawing.Point(7, 236);
-            this.btnbookmanage.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnbookmanage.Name = "btnbookmanage";
-            this.btnbookmanage.Size = new System.Drawing.Size(229, 60);
-            this.btnbookmanage.TabIndex = 31;
-            this.btnbookmanage.Text = "     番茄钟";
-            this.btnbookmanage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnbookmanage.UseVisualStyleBackColor = false;
-            this.btnbookmanage.Click += new System.EventHandler(this.btnbookmanage_Click);
+            this.btnTomato.BackColor = System.Drawing.Color.Orange;
+            this.btnTomato.FlatAppearance.BorderSize = 0;
+            this.btnTomato.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnTomato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTomato.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTomato.ForeColor = System.Drawing.Color.White;
+            this.btnTomato.Image = ((System.Drawing.Image)(resources.GetObject("btnTomato.Image")));
+            this.btnTomato.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTomato.Location = new System.Drawing.Point(7, 236);
+            this.btnTomato.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnTomato.Name = "btnTomato";
+            this.btnTomato.Size = new System.Drawing.Size(229, 60);
+            this.btnTomato.TabIndex = 31;
+            this.btnTomato.Text = "     番茄钟";
+            this.btnTomato.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTomato.UseVisualStyleBackColor = false;
+            this.btnTomato.Click += new System.EventHandler(this.btnbookmanage_Click);
             // 
-            // btnHome
+            // btnMain
             // 
-            this.btnHome.BackColor = System.Drawing.Color.Orange;
-            this.btnHome.FlatAppearance.BorderSize = 0;
-            this.btnHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(7, 176);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(229, 60);
-            this.btnHome.TabIndex = 32;
-            this.btnHome.Text = "     主页";
-            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            this.btnMain.BackColor = System.Drawing.Color.Orange;
+            this.btnMain.FlatAppearance.BorderSize = 0;
+            this.btnMain.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMain.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMain.ForeColor = System.Drawing.Color.White;
+            this.btnMain.Image = ((System.Drawing.Image)(resources.GetObject("btnMain.Image")));
+            this.btnMain.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMain.Location = new System.Drawing.Point(7, 176);
+            this.btnMain.Margin = new System.Windows.Forms.Padding(7, 0, 0, 0);
+            this.btnMain.Name = "btnMain";
+            this.btnMain.Size = new System.Drawing.Size(229, 60);
+            this.btnMain.TabIndex = 32;
+            this.btnMain.Text = "     主页";
+            this.btnMain.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMain.UseVisualStyleBackColor = false;
+            this.btnMain.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.Color.Orange;
             this.panelLeft.Controls.Add(this.flowLayoutPanel3);
-            this.panelLeft.Controls.Add(this.btnHome);
-            this.panelLeft.Controls.Add(this.btnbookmanage);
-            this.panelLeft.Controls.Add(this.btnreader);
-            this.panelLeft.Controls.Add(this.btnborrow);
-            this.panelLeft.Controls.Add(this.btnqueryinfo);
-            this.panelLeft.Controls.Add(this.btnsystemset);
-            this.panelLeft.Controls.Add(this.btnbillmanage);
-            this.panelLeft.Controls.Add(this.btnusermanage);
+            this.panelLeft.Controls.Add(this.btnMain);
+            this.panelLeft.Controls.Add(this.btnTomato);
+            this.panelLeft.Controls.Add(this.btnTomatoStatistic);
+            this.panelLeft.Controls.Add(this.btnBills);
+            this.panelLeft.Controls.Add(this.btnBillsStatistic);
+            this.panelLeft.Controls.Add(this.btnSystemSet);
+            this.panelLeft.Controls.Add(this.btnManager);
+            this.panelLeft.Controls.Add(this.btn);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
@@ -427,14 +428,14 @@ namespace Management.Forms
         private System.Windows.Forms.Timer timer4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer5;
-        private System.Windows.Forms.Button btnusermanage;
-        private System.Windows.Forms.Button btnbillmanage;
-        private System.Windows.Forms.Button btnsystemset;
-        private System.Windows.Forms.Button btnqueryinfo;
-        private System.Windows.Forms.Button btnborrow;
-        private System.Windows.Forms.Button btnreader;
-        private System.Windows.Forms.Button btnbookmanage;
-        private System.Windows.Forms.Button btnHome;
+        private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.Button btnManager;
+        private System.Windows.Forms.Button btnSystemSet;
+        private System.Windows.Forms.Button btnBillsStatistic;
+        private System.Windows.Forms.Button btnBills;
+        private System.Windows.Forms.Button btnTomatoStatistic;
+        private System.Windows.Forms.Button btnTomato;
+        private System.Windows.Forms.Button btnMain;
         private System.Windows.Forms.FlowLayoutPanel panelLeft;
         private System.Windows.Forms.Panel panelmain;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;

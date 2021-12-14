@@ -29,8 +29,9 @@ namespace Management.Forms
         private void TomatoStatistics_Load(object sender, EventArgs e)
         {
             this.AutoScrollMinSize = new Size(ClientRectangle.Width, ClientRectangle.Height);
-            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
             string timelenth = "100000";
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+
             dataGridView1.RowTemplate.Height = 60;
             dataGridView1.Font = new Font("宋体", 25);
             chartsdisplay(timelenth);
@@ -86,6 +87,11 @@ namespace Management.Forms
             string sql1 = string.Format(@"select * from tmtsta ");
             DataSet ds1 = db.SqlSet(sql1);
             dataGridView1.DataSource = ds1.Tables[0];
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
