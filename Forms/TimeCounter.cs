@@ -6,7 +6,7 @@ namespace Management.Forms
 {
     public partial class TimeCounter : Form
     {
-        public string Taccount;
+        public string uid;
         public TimeCounter()
         {
             InitializeComponent();
@@ -18,7 +18,7 @@ namespace Management.Forms
             playeralarm.Stop();
             this.Dispose();
         }
-        SoundPlayer player = new SoundPlayer(@"C:\Users\唐宇峰\Desktop\Management\music\rain.wav");
+        SoundPlayer player = new SoundPlayer(@"F:\GitHub Repository\Management\music\rain.wav");
         private void TimeCounter_Load(object sender, EventArgs e)
         {
             timer1.Start();
@@ -64,7 +64,7 @@ namespace Management.Forms
 
 
         string music = Application.StartupPath.Substring(0, Application.StartupPath.Length - 9) + "\\music\\alarm.wav";
-        SoundPlayer playeralarm = new SoundPlayer(@"C:\Users\唐宇峰\Desktop\Management\music\alarm.wav");
+        SoundPlayer playeralarm = new SoundPlayer(@"F:\GitHub Repository\Management\music\alarm.wav");
         private void ToClock()
         {
             Attentiontime -= 1;
@@ -94,8 +94,7 @@ namespace Management.Forms
             {
                 TimeSet.Text = "00:00";
                 label1.Text = "已完成";
-
-                string sql = string.Format(@"UPDATE tomato SET tdcounter=tdcounter+1 WHERE tdname='{0}' and account={1}", tdname, Taccount);
+                string sql = string.Format(@"UPDATE tomato SET tdcounter=tdcounter+1 WHERE tdname='{0}'and uid={1}", tdname, uid);
                 DBUtil db = new DBUtil();
                 db.SqlQuery(sql);
                 Shake();

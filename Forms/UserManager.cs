@@ -34,6 +34,7 @@ namespace Management.Forms
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
             dataGridView1.RowTemplate.Height = 60;
             dataGridView1.Font = new Font("宋体", 25);
+            dataGridView1.ForeColor = Color.FromArgb(248, 172, 89); 
             dataGridView1.DataSource = ds1.Tables[0];
         }
 
@@ -41,6 +42,7 @@ namespace Management.Forms
         {
             txtAccount.Clear();
             txtPassWord.Clear();
+            txtid.Clear();
             txtUsername.Clear();
             txtTel.Clear();
         }
@@ -75,7 +77,7 @@ namespace Management.Forms
         private void btnDelete_Click(object sender, EventArgs e)
         {
             string uid = txtid.Text;
-            string sql = string.Format(@"delete  from userinfo where uid={0}", uid);
+            string sql = string.Format(@"delete from userinfo where uid={0}", uid);
             DBUtil db = new DBUtil();
             db.SqlQuery(sql);
             MessageBox.Show("删除成功");

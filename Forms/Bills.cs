@@ -21,7 +21,18 @@ namespace Management.Forms
         {
             if (this.bname.Text == "")
             {
-                MessageBox.Show("请输入待办名称！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("请输入消费名称！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.bname.Focus();
+                return false;
+            }
+            else if (this.btype.Text == "") {
+                MessageBox.Show("请输入消费类型！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.bname.Focus();
+                return false;
+            }
+            else if (this.bvalue.Text == "")
+            {
+                MessageBox.Show("请输入消费金额！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.bname.Focus();
                 return false;
             }

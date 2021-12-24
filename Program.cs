@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Management.Forms;
+using System;
 using System.Windows.Forms;
 namespace Management
 {
@@ -13,6 +14,7 @@ namespace Management
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());
+
         }
     }
 }

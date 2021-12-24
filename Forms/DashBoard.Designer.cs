@@ -77,7 +77,7 @@ namespace Management.Forms
             // 
             this.labeltitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labeltitle.BackColor = System.Drawing.Color.Orange;
-            this.labeltitle.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeltitle.Font = new System.Drawing.Font("幼圆", 18F);
             this.labeltitle.ForeColor = System.Drawing.Color.FloralWhite;
             this.labeltitle.Location = new System.Drawing.Point(3, 0);
             this.labeltitle.Name = "labeltitle";
@@ -89,7 +89,7 @@ namespace Management.Forms
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.BackColor = System.Drawing.Color.Orange;
-            this.label4.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("幼圆", 18F);
             this.label4.ForeColor = System.Drawing.Color.FloralWhite;
             this.label4.Location = new System.Drawing.Point(261, 0);
             this.label4.Name = "label4";
@@ -159,7 +159,7 @@ namespace Management.Forms
             this.btn.FlatAppearance.BorderSize = 0;
             this.btn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn.Font = new System.Drawing.Font("幼圆", 12F);
             this.btn.ForeColor = System.Drawing.Color.White;
             this.btn.Image = ((System.Drawing.Image)(resources.GetObject("btn.Image")));
             this.btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -178,7 +178,7 @@ namespace Management.Forms
             this.btnManager.FlatAppearance.BorderSize = 0;
             this.btnManager.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnManager.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManager.Font = new System.Drawing.Font("幼圆", 12F);
             this.btnManager.ForeColor = System.Drawing.Color.White;
             this.btnManager.Image = ((System.Drawing.Image)(resources.GetObject("btnManager.Image")));
             this.btnManager.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -198,7 +198,7 @@ namespace Management.Forms
             this.btnSystemSet.FlatAppearance.BorderSize = 0;
             this.btnSystemSet.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnSystemSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSystemSet.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSystemSet.Font = new System.Drawing.Font("幼圆", 12F);
             this.btnSystemSet.ForeColor = System.Drawing.Color.White;
             this.btnSystemSet.Image = ((System.Drawing.Image)(resources.GetObject("btnSystemSet.Image")));
             this.btnSystemSet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -218,7 +218,7 @@ namespace Management.Forms
             this.btnBillsStatistic.FlatAppearance.BorderSize = 0;
             this.btnBillsStatistic.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnBillsStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBillsStatistic.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBillsStatistic.Font = new System.Drawing.Font("幼圆", 12F);
             this.btnBillsStatistic.ForeColor = System.Drawing.Color.White;
             this.btnBillsStatistic.Image = ((System.Drawing.Image)(resources.GetObject("btnBillsStatistic.Image")));
             this.btnBillsStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -238,7 +238,7 @@ namespace Management.Forms
             this.btnBills.FlatAppearance.BorderSize = 0;
             this.btnBills.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnBills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBills.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBills.Font = new System.Drawing.Font("幼圆", 12F);
             this.btnBills.ForeColor = System.Drawing.Color.White;
             this.btnBills.Image = ((System.Drawing.Image)(resources.GetObject("btnBills.Image")));
             this.btnBills.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -258,7 +258,7 @@ namespace Management.Forms
             this.btnTomatoStatistic.FlatAppearance.BorderSize = 0;
             this.btnTomatoStatistic.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnTomatoStatistic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTomatoStatistic.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTomatoStatistic.Font = new System.Drawing.Font("幼圆", 12F);
             this.btnTomatoStatistic.ForeColor = System.Drawing.Color.White;
             this.btnTomatoStatistic.Image = ((System.Drawing.Image)(resources.GetObject("btnTomatoStatistic.Image")));
             this.btnTomatoStatistic.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -278,7 +278,7 @@ namespace Management.Forms
             this.btnTomato.FlatAppearance.BorderSize = 0;
             this.btnTomato.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnTomato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTomato.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTomato.Font = new System.Drawing.Font("幼圆", 12F);
             this.btnTomato.ForeColor = System.Drawing.Color.White;
             this.btnTomato.Image = ((System.Drawing.Image)(resources.GetObject("btnTomato.Image")));
             this.btnTomato.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -298,7 +298,7 @@ namespace Management.Forms
             this.btnMain.FlatAppearance.BorderSize = 0;
             this.btnMain.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMain.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMain.Font = new System.Drawing.Font("幼圆", 12F);
             this.btnMain.ForeColor = System.Drawing.Color.White;
             this.btnMain.Image = ((System.Drawing.Image)(resources.GetObject("btnMain.Image")));
             this.btnMain.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -437,11 +437,11 @@ namespace Management.Forms
         private System.Windows.Forms.Button btnTomato;
         private System.Windows.Forms.Button btnMain;
         private System.Windows.Forms.FlowLayoutPanel panelLeft;
-        private System.Windows.Forms.Panel panelmain;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
         private System.Windows.Forms.Button btnfold;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Panel panelmain;
     }
 }

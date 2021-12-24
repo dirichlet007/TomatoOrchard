@@ -84,7 +84,7 @@ namespace Management.Forms
             // 
             // btnColor6
             // 
-            this.btnColor6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.btnColor6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(173)))), ((int)(((byte)(143)))));
             this.btnColor6.FlatAppearance.BorderSize = 0;
             this.btnColor6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColor6.ForeColor = System.Drawing.Color.White;
@@ -92,13 +92,13 @@ namespace Management.Forms
             this.btnColor6.Name = "btnColor6";
             this.btnColor6.Size = new System.Drawing.Size(80, 80);
             this.btnColor6.TabIndex = 0;
-            this.btnColor6.Text = "Hello";
+            this.btnColor6.Text = "淡藏花红";
             this.btnColor6.UseVisualStyleBackColor = false;
             this.btnColor6.Click += new System.EventHandler(this.btnColor6_Click);
             // 
             // btnColor5
             // 
-            this.btnColor5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(40)))), ((int)(((byte)(148)))));
+            this.btnColor5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(230)))), ((int)(((byte)(206)))));
             this.btnColor5.FlatAppearance.BorderSize = 0;
             this.btnColor5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColor5.ForeColor = System.Drawing.Color.White;
@@ -106,13 +106,13 @@ namespace Management.Forms
             this.btnColor5.Name = "btnColor5";
             this.btnColor5.Size = new System.Drawing.Size(80, 80);
             this.btnColor5.TabIndex = 0;
-            this.btnColor5.Text = "Hello";
+            this.btnColor5.Text = "荔肉白";
             this.btnColor5.UseVisualStyleBackColor = false;
             this.btnColor5.Click += new System.EventHandler(this.btnColor5_Click);
             // 
             // btnColor4
             // 
-            this.btnColor4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(179)))), ((int)(((byte)(148)))));
+            this.btnColor4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(193)))), ((int)(((byte)(140)))));
             this.btnColor4.FlatAppearance.BorderSize = 0;
             this.btnColor4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColor4.ForeColor = System.Drawing.Color.White;
@@ -120,13 +120,13 @@ namespace Management.Forms
             this.btnColor4.Name = "btnColor4";
             this.btnColor4.Size = new System.Drawing.Size(80, 80);
             this.btnColor4.TabIndex = 0;
-            this.btnColor4.Text = "Hello";
+            this.btnColor4.Text = "毛绿";
             this.btnColor4.UseVisualStyleBackColor = false;
             this.btnColor4.Click += new System.EventHandler(this.btnColor4_Click);
             // 
             // btnColor3
             // 
-            this.btnColor3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(172)))), ((int)(((byte)(89)))));
+            this.btnColor3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(223)))), ((int)(((byte)(112)))));
             this.btnColor3.FlatAppearance.BorderSize = 0;
             this.btnColor3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColor3.ForeColor = System.Drawing.Color.White;
@@ -134,13 +134,13 @@ namespace Management.Forms
             this.btnColor3.Name = "btnColor3";
             this.btnColor3.Size = new System.Drawing.Size(80, 80);
             this.btnColor3.TabIndex = 0;
-            this.btnColor3.Text = "默认";
+            this.btnColor3.Text = "麦秆黄";
             this.btnColor3.UseVisualStyleBackColor = false;
             this.btnColor3.Click += new System.EventHandler(this.btnColor3_Click);
             // 
             // btnColor2
             // 
-            this.btnColor2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(198)))), ((int)(((byte)(200)))));
+            this.btnColor2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(213)))), ((int)(((byte)(220)))));
             this.btnColor2.FlatAppearance.BorderSize = 0;
             this.btnColor2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColor2.ForeColor = System.Drawing.Color.White;
@@ -148,13 +148,13 @@ namespace Management.Forms
             this.btnColor2.Name = "btnColor2";
             this.btnColor2.Size = new System.Drawing.Size(80, 80);
             this.btnColor2.TabIndex = 0;
-            this.btnColor2.Text = "Hello";
+            this.btnColor2.Text = "清水蓝 ";
             this.btnColor2.UseVisualStyleBackColor = false;
             this.btnColor2.Click += new System.EventHandler(this.btnColor2_Click);
             // 
             // btnColor1
             // 
-            this.btnColor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
+            this.btnColor1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(178)))), ((int)(((byte)(201)))));
             this.btnColor1.FlatAppearance.BorderSize = 0;
             this.btnColor1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColor1.ForeColor = System.Drawing.Color.White;
@@ -162,7 +162,7 @@ namespace Management.Forms
             this.btnColor1.Name = "btnColor1";
             this.btnColor1.Size = new System.Drawing.Size(80, 80);
             this.btnColor1.TabIndex = 0;
-            this.btnColor1.Text = "Hello";
+            this.btnColor1.Text = "星蓝";
             this.btnColor1.UseVisualStyleBackColor = false;
             this.btnColor1.Click += new System.EventHandler(this.btnColor1_Click);
             // 

@@ -16,17 +16,17 @@ namespace Management.Forms
 
         private void btnColor4_Click(object sender, EventArgs e)
         {
-            rgbValue = "26, 179, 148";
+            rgbValue = "102, 193, 140";
             UpdateDefaultColor(rgbValue);
-            Color c = Color.FromArgb(26, 179, 148);
+            Color c = Color.FromArgb(102, 193, 140);
             change(c);
         }
 
         private void btnColor3_Click(object sender, EventArgs e)
         {
-            rgbValue = "248, 172, 89";
+            rgbValue = "248,223,112";
             UpdateDefaultColor(rgbValue);
-            Color c = Color.FromArgb(248, 172, 89);
+            Color c = Color.FromArgb(248, 223, 112);
             change(c);
         }
 
@@ -37,9 +37,9 @@ namespace Management.Forms
 
         private void btnColor1_Click(object sender, EventArgs e)
         {
-            rgbValue = "0, 71, 160";
+            rgbValue = "143,178,201";
             UpdateDefaultColor(rgbValue);
-            Color c = Color.FromArgb(0, 71, 160);
+            Color c = Color.FromArgb(143, 178, 201);
             change(c);
         }
         private void UpdateDefaultColor(string color)
@@ -51,26 +51,34 @@ namespace Management.Forms
 
         private void btnColor2_Click(object sender, EventArgs e)
         {
-            rgbValue = "35, 198, 200";
+            rgbValue = "147,213,220";
             UpdateDefaultColor(rgbValue);
-            Color c = Color.FromArgb(35, 198, 200);
+            Color c = Color.FromArgb(147, 213, 220);
             change(c);
         }
 
         private void btnColor6_Click(object sender, EventArgs e)
         {
-            rgbValue = "198, 47, 47";
+            rgbValue = "246,173,143";
             UpdateDefaultColor(rgbValue);
-            Color c = Color.FromArgb(198, 47, 47);
+            Color c = Color.FromArgb(246, 173, 143);
             change(c);
         }
 
         private void btnColor5_Click(object sender, EventArgs e)
         {
-            rgbValue = "116, 40, 148";
+            rgbValue = "242,230,206";
             UpdateDefaultColor(rgbValue);
-            Color c = Color.FromArgb(116, 40, 148);
+            Color c = Color.FromArgb(242, 230, 206);
             change(c);
         }
+        /*
+                菠萝紫  128,118,163
+                星蓝 147,181,207
+                麦秆黄 248,223,112
+                淡藏花红 246,173,143
+                清水蓝 147,213,220
+                荔肉白 242,230,206
+         */
     }
 }

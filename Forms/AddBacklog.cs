@@ -1,4 +1,5 @@
 ﻿using Management.DataBaseHelper;
+using Management.ProjectHelper;
 using System;
 using System.Windows.Forms;
 namespace Management.Forms
@@ -38,12 +39,27 @@ namespace Management.Forms
                 this.rtbname.Focus();
                 return false;
             }
+            else if (this.cnttype.Text=="") {
+                MessageBox.Show("请输入计时类型！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.cnttype.Focus();
+                return false;
+            }
+            else if (this.rtbtime.Text == "")
+            {
+                MessageBox.Show("请输入待办时长！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.rtbtime.Focus();
+                return false;
+            }
+            else if (this.bcltype.Text == "")
+            {
+                MessageBox.Show("请输入待办类型！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.bcltype.Focus();
+                return false;
+            }
             else
             {
                 return true;
             }
-
-
 
         }
 
@@ -51,8 +67,8 @@ namespace Management.Forms
         {
             this.Dispose();
         }
-        public delegate void rfhpnl();
-        public event rfhpnl rfhTmtClk;
+        public delegate void RefreshTomato();
+        public event RefreshTomato refresh;
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (check())
@@ -66,7 +82,7 @@ namespace Management.Forms
                 string sql = string.Format(@"INSERT INTO tomato(tdname,tdtype,tdlenth,tdtime,uid)
                     VALUES ('{0}','{1}',{2},'{3}','{4}');", tdname, tdtype, tdlenth, tdtime, uid);
                 db.SqlQuery(sql);
-                rfhTmtClk();
+                refresh();
                 this.Close();
             }
         }

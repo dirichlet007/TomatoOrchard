@@ -26,13 +26,13 @@ namespace Management.ProjectHelper
             frm.Show();
         }
 
-        public void AddControlsToPanel(Control c, Panel panelmain)
+       /* public void AddControlsToPanel(Control c, Panel panelmain)
         {
 
             c.Dock = DockStyle.Fill;
             panelmain.Controls.Clear();
             panelmain.Controls.Add(c);
 
-        }
+        }*/
     }
 }

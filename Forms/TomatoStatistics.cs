@@ -31,7 +31,6 @@ namespace Management.Forms
             this.AutoScrollMinSize = new Size(ClientRectangle.Width, ClientRectangle.Height);
             string timelenth = "100000";
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
-
             dataGridView1.RowTemplate.Height = 60;
             dataGridView1.Font = new Font("宋体", 25);
             chartsdisplay(timelenth);

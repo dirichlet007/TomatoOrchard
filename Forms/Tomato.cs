@@ -18,17 +18,18 @@ namespace Management.Forms
         {
             InitializeComponent();
         }
-        class Tmtinfo
+        public string uid;
+       /* class Tmtinfo
         {
             public string tmtname;
             public string tmttype;
-        }
+        }*/
         FormHelper fmhpr = new FormHelper();
         public void textdisplay() {
 
-            List<Tmtinfo> bls = new List<Tmtinfo>();
+            //List<Tmtinfo> bls = new List<Tmtinfo>();
             DBUtil db = new DBUtil();
-            string sql = string.Format(@"select tdname,tdtype,tdlenth from tomato ");
+            string sql = string.Format(@"select tdname,tdtype,tdlenth from tomato order by tdnum desc ");
             DataSet ds = db.SqlSet(sql);
             var location = panel1.Location;
             try
@@ -38,12 +39,14 @@ namespace Management.Forms
                 {
 
                     //遍历表中的每个单元格
-                    Tmtinfo u = new Tmtinfo();
-                    u.tmtname = myRow[0].ToString();
-                    u.tmttype = myRow[1].ToString();
+                    //Tmtinfo u = new Tmtinfo();
+                   // u.tmtname = myRow[0].ToString();
+                   // u.tmttype = myRow[1].ToString();
                     mybutton btn = new mybutton();
-                    btn.label1_text = u.tmtname;                   
-                    btn.label2_text = u.tmttype;
+                    btn.uid = uid;
+                    btn.tdtime = myRow[2].ToString();
+                    btn.label1_text = myRow[0].ToString();
+                    btn.label2_text = myRow[1].ToString();
                     location.Y += 110;
                     btn.Location = new Point(location.X, location.Y);
                     panel1.Controls.Add(btn);
@@ -71,8 +74,18 @@ namespace Management.Forms
         private void btnHome_Click(object sender, EventArgs e)
         {
             AddBacklog fs = new AddBacklog();
-            fs.rfhTmtClk += textdisplay;
+            fs.refresh +=new AddBacklog.RefreshTomato(textdisplay);
+            //fs.rfhTmtClk += textdisplay;
             fs.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
         }
     }
 }

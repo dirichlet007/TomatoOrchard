@@ -66,13 +66,12 @@ namespace Management
             if (Check())
             {
                 button1.Text = "正在登录...";
-
                 string sql = string.Format(@"select count(*) from userinfo where account='{0}'and password ='{1}'", account, password);
-                string sql2 = string.Format(@"select username,authority,theme,uid from userinfo where account='{0}'and password ='{1}'", account, password);
+                string sql1 = string.Format(@"select username,authority,theme,uid from userinfo where account='{0}'and password ='{1}'", account, password);
                 if (db.SqlCheck(sql))
                 {
 
-                    DataSet ds = db.SqlSet(sql2);
+                    DataSet ds = db.SqlSet(sql1);
                     label1.Text = ds.Tables[0].Rows[0][0].ToString();
                     DashBoard fs = new DashBoard();
                     fs.username = ds.Tables[0].Rows[0][0].ToString();
@@ -89,18 +88,8 @@ namespace Management
                 }
             }
         }
-        public void show()
-        {
-            DashBoard dbd = new DashBoard();
-            dbd.Show();
-            button1.Text = "登录";
-        }
-        public void warning()
-        {
-            MessageBox.Show("密码错误！\t", "错误警告", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            button1.Text = "登录";
+        public DashBoard dbd = new DashBoard();
 
-        }
         private void label2_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://wpa.qq.com/msgrd?v=3&uin=1508022928&site=qq&menu=yes");

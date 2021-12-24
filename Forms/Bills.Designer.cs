@@ -46,11 +46,11 @@
             this.btype.Name = "btype";
             this.btype.Size = new System.Drawing.Size(371, 53);
             this.btype.TabIndex = 116;
-            this.btype.Text = "";
+            this.btype.Text = "食品支出";
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.Wheat;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(213)))), ((int)(((byte)(220)))));
             this.label2.Font = new System.Drawing.Font("幼圆", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.Location = new System.Drawing.Point(314, 313);
             this.label2.Name = "label2";
@@ -60,13 +60,13 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.Wheat;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(213)))), ((int)(((byte)(220)))));
             this.label1.Font = new System.Drawing.Font("幼圆", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(313, 185);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(259, 51);
             this.label1.TabIndex = 110;
-            this.label1.Text = "账单名称";
+            this.label1.Text = "消费名称";
             // 
             // bname
             // 
@@ -122,7 +122,7 @@
             // 
             // label4
             // 
-            this.label4.BackColor = System.Drawing.Color.Wheat;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(213)))), ((int)(((byte)(220)))));
             this.label4.Font = new System.Drawing.Font("幼圆", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.Location = new System.Drawing.Point(314, 446);
             this.label4.Name = "label4";
@@ -137,13 +137,13 @@
             this.bvalue.Name = "bvalue";
             this.bvalue.Size = new System.Drawing.Size(371, 53);
             this.bvalue.TabIndex = 114;
-            this.bvalue.Text = "";
+            this.bvalue.Text = "0";
             // 
             // Bills
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Wheat;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(213)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(1318, 674);
             this.Controls.Add(this.btype);
             this.Controls.Add(this.bvalue);

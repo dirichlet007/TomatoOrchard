@@ -102,7 +102,7 @@ namespace Management.Forms
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-             Main fs = new Main();
+            Main fs = new Main();
             fmhpr.closeFrm(panelmain);
             fmhpr.openFrm(fs, panelmain);
         }
@@ -129,6 +129,7 @@ namespace Management.Forms
         private void btnbookmanage_Click(object sender, EventArgs e)
         {
             Tomato fs = new Tomato();
+            fs.uid = uid;
             fmhpr.closeFrm(panelmain);
             fmhpr.openFrm(fs, panelmain);
 
@@ -176,9 +177,16 @@ namespace Management.Forms
 
         private void btnManager_Click(object sender, EventArgs e)
         {
-            UserManager fs = new UserManager();
-            fmhpr.closeFrm(panelmain);
-            fmhpr.openFrm(fs, panelmain);
+
+            if (authority == "1")
+            {
+                UserManager fs = new UserManager();
+                fmhpr.closeFrm(panelmain);
+                fmhpr.openFrm(fs, panelmain);
+            }
+            else {
+                MessageBox.Show("您没有对应权限!");
+            }
         }
     }
 }
