@@ -17,7 +17,7 @@
 
 ​	用户需要在登陆界面,输入正确的账号与密码,才能登陆进入主界面.同时,为了方便用户使用,设计了记住密码和账号的功能.如果用户忘记密码,可以点击忘记密码,寻求开发者的支持.
 
-![image-20211223141510670](/Users/tangyufeng/Library/Application Support/typora-user-images/image-20211223141510670.png)
+![image-Login](/Image/Login.png)
 
 ### 2 主页面
 
