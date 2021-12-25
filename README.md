@@ -23,7 +23,7 @@
 
 ​	主页面会根据用户权限,动态生成用户名以及对应权限,同时,在主页面的侧边栏中,含有导航按钮,用户点击不同的导航按钮,可以实现主页面中panel的改变
 
-![image-20211223141458060](/Users/tangyufeng/Library/Application Support/typora-user-images/image-20211223141458060.png)
+![image-Main](/Image/Main.png)
 
 ### 3 番茄钟页面
 
