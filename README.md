@@ -29,7 +29,7 @@
 
 ​	番茄钟页面会根据用户的id,自动检索用户创建的代办信息,并生成番茄钟的按钮列表.在右上角,有添加代办的按钮,用户可以通过点击按钮,实现自定义添加番茄钟,每一行番茄钟具有开始按钮,点击可以打开番茄计时的窗口,实现用户的番茄专注功能.
 
-![image-20211223141522313](/Users/tangyufeng/Library/Application Support/typora-user-images/image-20211223141522313.png)
+![image-Tomato](/Image/Tomato.png)
 
 ### 4 添加代办页面
 
@@ -46,8 +46,7 @@
 ### 6 番茄统计页面
 
 ​	番茄统计页面,会根据用户的番茄钟完成次数,计算用户每个番茄的总时长,并在左下角生成饼图.为了方便用户进行直观的统计,可以根据需求,生成今日统计,本周统计,以及年度统计,同时,为了方便管理员进行管理,,含有详细统计按钮.可以查看所有用户的详细代办信息
-
-​	![image-20211223143229442](/Users/tangyufeng/Library/Application Support/typora-user-images/image-20211223143229442.png)
+![image-Statistics](/Image/Statistics.png)
 
 ### 7 账单页面
 
@@ -65,13 +64,13 @@
 
 ​	为了使用户不对千篇一律的主题颜色感到枯燥,系统设置了系统主题更改页面,用户可以在此页面实现用户主题颜色的切换,同时,该信息会传入数据库,并在数据库进行存储,用户在重新打开面板时,程序会读取数据库中存储的主题颜色,并进行相应的加载.
 
-![image-20211223144327389](/Users/tangyufeng/Library/Application Support/typora-user-images/image-20211223144327389.png)
+![image-System](/Image/System.png)
 
 ### 10 用户管理
 
 ​	考虑到多人使用的情况,设计了用户管理页面,只有超级管理员有权限可以进入,管理员可以在此页面对用户进行管理,进行用户的增删改查.
 
-![image-20211223144940203](/Users/tangyufeng/Library/Application Support/typora-user-images/image-20211223144940203.png)
+![image-Manager](/Image/Manager.png)
 
 ## 三 数据库设计
 
