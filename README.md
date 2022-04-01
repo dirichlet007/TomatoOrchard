@@ -1,9 +1,8 @@
-# 小型管理系统
+# 番茄记账
 
 * 小组成员:宇峰   
 * 年级:2019级  
 * 专业:金融学 
-* 指导教师:袁科萍  
 * 日期:2021年12月24日
 * GitHub地址:https://github.com/dirichlet007/Management
 
